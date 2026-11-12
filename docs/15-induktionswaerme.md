@@ -48,7 +48,7 @@ ins System zu nehmen.
 
 | Nr. | Anwendung | Nutzen | Bewertung |
 |---|---|---|---|
-| **N1** | **Induktive Abtauung des WP-Verdampfers** | Statt Umkehrbetrieb oder Heizstab: Verdampferlamellen (Stahl) gezielt in Minuten abtauen, kein Kältemittel-Umschalten, kein Effizienzverlust durch Tauperiode in der Bilanz | ★★★ echte Systemverbesserung, klein (1–2 kW), gut machbar |
+| **N1** | **Induktive Abtauung des WP-Verdampfers** | Statt Umkehrbetrieb oder Heizstab: gezielt in Minuten abtauen, kein Kältemittel-Umschalten, kein Effizienzverlust durch Tauperiode. **Achtung:** Standard-Lamellen sind **Alu** (Cu-Rohr/Alu-Lamelle) und nicht induzierbar → es braucht einen **Stahl-Sleeve/Stahlblech** auf dem Lamellenpaket oder einen stahllamellen-Verdampfer (siehe Kap. 7) | ★★★ echte Systemverbesserung, klein (1–2 kW), gut machbar |
 | **N2** | **Kontaktlose Erwärmung von Puffer-/Brauchwassertank** (Spule außen am Stahltank, Ferrit-Rückschluss, Dämmung darüber) | Kein Heizstab im Wasser, keine Verkalkung, hygienisch, Tank bleibt geschlossen; PV-Überschuss-Boost in den Puffer | ★★★ einzigartige Eigenschaftskombination |
 | **N3** | **Leitungs-Frostschutz** (induktive Beheizung von Stahl-/Verbundrohren in kalten Zonen) | Kontaktlos, nur aktiv wenn nötig, kein Dauer-Heizband | ★★ nützlich, kleiner Aufwand |
 | **N4** | **Boost-Heizpanel mit Stahlkern** (Wand/Decke: Spulen hinter nichtmetallischer Abdeckung erwärmen Stahlblech → Strahlung) | Kalte Oberfläche, schnelle Wärme aus PV-Überschuss; aber teurer als Folie bei COP 0,85 vs. 1,0 | ★★ möglich, nur wo Folie nicht geht (Feuchtraum, mechanische Belastung) |
@@ -110,7 +110,84 @@ Spulenform + Anbindung + Regelung, kein Neuerfinden.
 - **Ehrlich:** Kein Massenmarkt wie SunWall; der Wert liegt in der
   Netzfrei-Integration (Abtau- und Boost-Logik), nicht im Bauteil.
 
-## 7. Risiken und Grenzen
+## 7. Hybrid-Gerät: Induktion in WP/Klimagerät integrieren?
+
+Die Idee: WP und Klimageräte enthalten viel Kupfer (Rohre, Wärmeübertrager) –
+lässt sich daraus ein **Hybridgerät** bauen, das induktiv mitheizt?
+
+### 7.1 Kupfer ist das schlechteste Induktionsziel (ehrliche Antwort)
+
+| Eigenschaft | ferromagnetischer Stahl | Kupfer/Aluminium |
+|---|---|---|
+| Ummagnetisierungsverluste (Hysterese) | ja (~1/3 der Wärme beim Kochfeld) | **keine** (nicht ferromagnetisch) |
+| Elektrischer Widerstand | hoch (~6–10× Cu) | sehr gering → Wirbelströme fließen leicht, verheizen sich aber kaum |
+| Skin-Tiefe bei 25–60 kHz | ~0,05–0,1 mm → Wärme in dünner Schicht, hoher effektiver Widerstand | ~0,3–0,5 mm → Strom verteilt sich, wenig Wärme |
+| Feldbündelung | Feld wird im Material gebündelt | Feld verteilt sich in die Umgebung (EMV!) |
+| Praxis | Induktionskochfeld: 84–90 % Wirkungsgrad | ~20× mehr Spulenstrom nötig für gleiche Wärme; „All-Metal"-Kochfelder brauchen bis 90 kHz, sind teurer und schlechter |
+
+**Und systematisch:** Wärme direkt in den Kondensator der WP einzuspeisen
+bedeutet COP 0,85 statt WP-COP 3–15 – als Grundwärme wirtschaftlich
+unsinnig (dann lieber Folie an der Wand).
+
+### 7.2 Der sinnvolle Hybrid: nicht das Kupfer, sondern Stahl-Partnerbauteile
+
+Ein Hybridgerät ist trotzdem machbar – mit induktiv beheizten **Stahl-Bauteilen
+im selben Gerät**, geteilter Leistungselektronik und Netzfrei-Regelung:
+
+```
+┌──────────────────────────────────────────────────────────┐
+│              Hybrid-WP (Prototyp, docs/02)               │
+│                                                          │
+│  Verdampfer ── Verdichter ── Verflüssiger ── Puffer      │
+│      │                          │              │         │
+│  [Stahl-Sleeve]          [Stahl-Boost-     [Stahl-Tank,   │
+│   + Induktionsspule       Sektion im        Induktion    │
+│    = Abtauung H1          Verflüssiger-     Ring = H3    │
+│                           pfad = H2]        Brauchwasser]│
+│                                                          │
+│  ┌──────────────────────────────────────────┐            │
+│  │ Gemeinsame Resonanz-Leistungselektronik  │◀── Netzfrei│
+│  │ 1–2 kW, Modus: aus / Abtau / Boost / BWD │   (EMS)    │
+│  └──────────────────────────────────────────┘            │
+└──────────────────────────────────────────────────────────┘
+```
+
+| Modus | Was passiert | Wann |
+|---|---|---|
+| **WP-Betrieb** | Induktion aus; normale Verdichterregelung | Standard |
+| **H1 Abtau-Boost** | Stahl-Sleeve am Verdampfer 1–2 kW für 1–3 Min; **Verdichter steht dabei** (kein paralleler Betrieb, keine Feldkopplung in die Elektronik) | Frostsensor + sinkende Leistung |
+| **H2 Backup-Boost** | Stahlsektion im Wasserpfad heizt direkt (COP 0,85) – Fallback bei sehr kalten Tagen oder WP-Störung | PV-Überschuss / Notbetrieb |
+| **H3 Brauchwasser** | Induktionsring am Stahl-Tank (kein Heizstab im Wasser) | PV-Überschuss / Preisfenster |
+
+**Interlock-Regel (wichtig):** Induktion und Verdichter laufen nie gleichzeitig
+am selben Kältekreis – Abtauung nur im Standstill, sonst Regelkonflikt und
+EMV-Rückwirkung auf die Verdichter-Elektronik.
+
+### 7.3 BOM-Delta gegenüber der Basis-WP (docs/02)
+
+| Zusatz | Kosten (DIY) |
+|---|---|
+| Resonanzwandler 1–2 kW (Serien-Powerboard) | 40–120 € |
+| Stahl-Sleeve + Spule am Verdampfer | 30–60 € |
+| Stahl-Boost-Sektion (Wasserpfad) + Spule | 40–80 € |
+| Induktionsring am Stahl-Tank | 40–80 € |
+| Modus-Logik/Interlock (Relais, ESP32) | 20–40 € |
+| **Summe Hybrid-Delta** | **~170–380 €** |
+
+### 7.4 Fazit
+
+- **Kupfer induktiv beheizen: nein** – physikalisch ineffizient, wirtschaftlich
+  unsinnig (COP 0,85 statt 3–15).
+- **Hybridgerät: ja, aber anders herum** – die WP behält ihr Kupfer, die
+  Induktion bekommt **eigene Stahl-Ziele** (Sleeve, Boost-Sektion, Tankring)
+  und teilt sich Gehäuse, Elektronik und Netzfrei-Regelung mit der WP.
+- Für den Klimageräte-Umbau (`11-klimageraete-umbau.md`, Pfad C) gilt das
+  Gleiche: Split + Platten-WT + nachrüstbares Induktionsmodul am Puffer/Tank,
+  nicht am Kupfer-Wärmeübertrager.
+- Das ist zugleich die Produktidee „InductCore" (Kap. 6) in konkreter Form:
+  Nachrüst-Kit aus Sleeve/Spule/Wandler für Standard-WP und Klima-Splits.
+
+## 8. Risiken und Grenzen
 
 - **COP 0,85 < 1,0:** niemals als Grundheizung einsetzen – nur Nischen.
 - **EMV/Störabstrahlung:** Hochfrequenz-Felder stören Elektronik in der
@@ -128,8 +205,10 @@ Spulenform + Anbindung + Regelung, kein Neuerfinden.
   richtlinie/Kälteanlagen-Verordnung → nur als Zusatzheizung außen am
   Lamellenpaket, nicht in den Kältemittelkreis eingreifen.
 
-## 8. Nächste Schritte
+## 9. Nächste Schritte
 
+- [ ] Hybrid-Delta (Kap. 7.3) in die WP-Prototyp-BOM (docs/02) aufnehmen;
+      Interlock-Logik (Induktion nur bei Verdichter-Stillstand) spezifizieren
 - [ ] N1-Abtauung als erster Prototyp: Kochfeld-Powerboard + flache Spule an
       einen Alt-Verdampfer, Abtauzeit vs. Umkehrbetrieb messen
 - [ ] N2-Tanktest: Spulenring an Stahl-Puffer, Wirkungsgrad (Strom → Wärme im

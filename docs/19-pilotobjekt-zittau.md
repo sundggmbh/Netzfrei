@@ -87,6 +87,19 @@ Antrag **vor Vorhabenbeginn** (vor jedem Vertrag!), ggf. gestaffelt je Haus/Baub
 (72 → 74 → 76). Die BEG-Stufen (28k/15k/8k je WE) gelten pro Antrag – die Reihenfolge
 der Häuser mit dem EEE optimieren.
 
+**Weg C (Strategiepapiere im Drive-Ordner „Zittau Anlageobjekt Sanierung“):**
+Einzelverkauf an selbstnutzende private Käufer über Verkäuferdarlehen – Aufteilung in
+Eigentumswohnungen (Teilungserklärung/Notar), dann schaltet jeder Käufer die maximale
+Selbstnutzer-Förderung frei (KfW 458: 30 % Grund + 16 % Klima + 30 % Einkommensbonus =
+70–80 % Zuschuss; KfW 358-Ergänzungskredit; Kalkulation: Heizungsanteil 17.166,67 € je
+WE, 80 % Zuschuss = 13.733,33 €, Anzahlung deckt die Heizung zu 100 %, Rest-Darlehen
+36.266,67 € grundbuchbesichert). Quellen: `sanierungsstrategie_zittau`,
+`geschaeftsmodell_privatfinanzierung_zittau`, `beispielkalkulation_50k_zittau`,
+`geschaeftsmodell_vollsanierung_zittau`. Weg C konkurriert mit Weg A (Betreutes
+Wohnen/Pflegedienst) und Weg B – **Entscheidung A/B/C pro Haus möglich** (z. B. 76 =
+Weg A als Pflegeobjekt, 72/74 = Weg B als AUTARQ-Demo), aber VOR Antragstellung
+festzurren, da die Wege förderrechtlich kollidieren.
+
 Weitere Weg-B-Punkte:
 
 - Steuerbonus § 35c EStG als Alternative für nicht-BEG-fähige Positionen prüfen
@@ -221,8 +234,9 @@ MPC/Prognose (alle 18 WE).
 1. Foto `20260127_165301.jpg` (Drive-Ordner „Grundsteuer Zittau") auswerten; fehlende
    Gebäudedaten ergänzen (3× Dach-/Süd-Fassadenfläche, 3× Netzanschluss, heutige
    Heizung je Haus, Flurstück/Kataster für das 2.400-m²-Grundstück).
-2. EEE beauftragen: Weg A (KfW 261) vs. Weg B (BEG EM) für 18 WE in 3 Häusern
-   durchrechnen (Kombinationsverbot!, Reihenfolge der Häuser optimieren).
+2. EEE + Notar/Steuerberater: Weg A (KfW 261) vs. Weg B (BEG EM) vs. Weg C
+   (Einzelverkauf an Selbstnutzer, 70–80 %) für 18 WE in 3 Häusern durchrechnen
+   (Kombinationsverbot!, Reihenfolge der Häuser optimieren) – Entscheidung vor Antrag.
 3. Pilot-WE auswählen (Süd-Fassade zur B96, zuerst umbaubar).
 4. Netzanschluss-Potenzial beim Netzbetreiber für alle 3 Häuser anfragen
    (90-kW-Frage, Kap. 5).

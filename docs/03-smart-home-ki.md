@@ -95,3 +95,11 @@ Projekts:
   anpassen.
 - **Markenname:** „AUTARQ powered by Netzfrei“ – das Haus ist die Hardware,
   Netzfrei ist das Gehirn.
+
+## Ergänzung: EMS v1 als Code
+
+Die regelbasierte EMS-Logik (Priorisierung Eigenverbrauch → Kosten →
+Autarkie → Komfort) ist als ausführbarer Code umgesetzt:
+`software/netzfrei/ems.py` mit Unit-Tests (`software/tests/`) und
+Wintertag-Simulation (`software/simulation.py`). Architektur/Setup:
+`software/README.md`.

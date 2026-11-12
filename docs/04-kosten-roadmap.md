@@ -52,7 +52,8 @@ je nach Region in 8–15 Jahren – in sonnenreichen Regionen schneller.
 
 ### Phase 3 – Netzfrei (Energieleitsystem)
 - [ ] Home-Assistant-Basisinstallation + Modbus-Anbindung WP/Batterie
-- [ ] Regelbasierte Optimierung (PV-Überschuss, Preisfenster)
+- [x] Regelbasierte Optimierung (PV-Überschuss, Preisfenster) – als Code:
+      `software/netzfrei/ems.py` + Tests + Simulation
 - [ ] MPC-Optimierer + lokale Prognosemodelle
 - [ ] Lokaler LLM-Assistent für Bedienung
 - [ ] Netzfrei-System-Image (flashbar für Mini-PC/Homelab)

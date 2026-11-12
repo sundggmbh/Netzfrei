@@ -1,0 +1,84 @@
+# Netzfrei-Package: Schwellen wie in software/netzfrei/ems.py
+# Ebene 1 (Home Assistant): Sensoren, Helfer, erste Automatik.
+
+input_number:
+  netzfrei_preis_guenstig:
+    name: "Preisgrenze guenstig (ct/kWh)"
+    min: 0
+    max: 60
+    step: 1
+    initial: 15
+  netzfrei_preis_teuern:
+    name: "Preisgrenze teuer (ct/kWh)"
+    min: 0
+    max: 80
+    step: 1
+    initial: 35
+  netzfrei_komfort_min:
+    name: "Komfort-Minimum (C)"
+    min: 15
+    max: 24
+    step: 0.5
+    initial: 20
+
+template:
+  - sensor:
+      - name: "Netzfrei Ueberschuss"
+        unit_of_measurement: "W"
+        state: >
+          {{ (states('sensor.pv_leistung') | float(0))
+             + (states('sensor.server_abwaerme') | float(0))
+             - (states('sensor.hausverbrauch') | float(0)) | round(0) }}
+      - name: "Netzfrei EMS-Modus"
+        state: >
+          {% if states('binary_sensor.wp_verdampfer_frost') == 'on' %}
+            abtauung
+          {% elif states('sensor.raumtemperatur') | float(99) < states('input_number.netzfrei_komfort_min') | float - 1 %}
+            komfort_notfall
+          {% elif states('sensor.netzfrei_ueberschuss') | float(0) > 0 %}
+            ueberschuss
+          {% elif states('sensor.strompreis') | float(99) <= states('input_number.netzfrei_preis_guenstig') | float %}
+            preisfenster
+          {% elif states('sensor.strompreis') | float(0) >= states('input_number.netzfrei_preis_teuern') | float %}
+            teuer
+          {% else %}
+            normal
+          {% endif %}
+
+automation:
+  - alias: "Netzfrei: teures Fenster - WP aus, Puffer bedient"
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.strompreis
+        above: input_number.netzfrei_preis_teuern
+    condition:
+      - condition: numeric_state
+        entity_id: sensor.puffertemperatur
+        above: 30
+      - condition: numeric_state
+        entity_id: sensor.raumtemperatur
+        above: 19
+    action:
+      - service: climate.set_hvac_mode
+        target:
+          entity_id: climate.waermepumpe
+        data:
+          hvac_mode: "off"
+    mode: single
+
+  - alias: "Netzfrei: guenstiges Fenster - Puffer laden"
+    trigger:
+      - platform: numeric_state
+        entity_id: sensor.strompreis
+        below: input_number.netzfrei_preis_guenstig
+    condition:
+      - condition: numeric_state
+        entity_id: sensor.puffertemperatur
+        below: 35
+    action:
+      - service: climate.set_temperature
+        target:
+          entity_id: climate.waermepumpe
+        data:
+          temperature: 24
+    mode: single

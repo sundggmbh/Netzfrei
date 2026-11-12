@@ -29,6 +29,8 @@ Ländern, und Abwärmenutzung von Servern, Computern, Kühlschränken und Tiefk�
    temperaturanstieg), Abwärme von Kühl-/Tiefkühlschränken und die Abluft der
    Lüftung als WP-Quelle: zusammen fast der gesamte Heizwärmebedarf eines Neubaus.
 
+> **Firmenmotto: Einfach, kostengünstig, unabhängig – für jeden bezahlbar.**
+
 ## Projektstruktur
 
 ```
@@ -50,6 +52,12 @@ autarq/
 │   ├── 13-produkt-sunwall.md  ← **SunWall**: Kollektor als Produkt/Marke (Markt, Spez, Roadmap)
 │   ├── 14-produktion-auftragsfertigung.md ← **SunWall-Produktion**: Lohnfertigung, Standorte, Material, Fördermittel
 │   └── 15-induktionswaerme.md ← **Induktion**: Wirbelstrom-Wärme (Realitätscheck, Abtau-/Tank-Boost-Nischen)
+├── software/
+│   ├── README.md              ← **Netzfrei-Software**: Architektur, EMS-Regeln, Setup
+│   ├── netzfrei/ems.py        ← EMS-Kernregelung v1 (regelbasiert, getestet)
+│   ├── simulation.py          ← Wintertag-Simulation (24 h, ohne Hardware)
+│   ├── tests/test_ems.py      ← Unit-Tests (12 Regeln)
+│   └── homeassistant/         ← HA-Grundgerüst (configuration + Package)
 └── tools/
     └── auslegung.py           ← Auslegungsrechner (Bedarf → Komponenten → Kosten)
 ```

@@ -108,6 +108,11 @@ Wohnen/Pflegedienst) und Weg B – **Entscheidung A/B/C pro Haus möglich** (z. 
 Weg A als Pflegeobjekt, 72/74 = Weg B als AUTARQ-Demo), aber VOR Antragstellung
 festzurren, da die Wege förderrechtlich kollidieren.
 
+**Stand der Entscheidung (November 2026):** Alle Modelle werden parallel recherchiert
+und offen gehalten – **Entscheidung im Januar** (nach EEE-Vorrechnung und erster
+Marktreaktion aus der Vermarktung). Bis dahin gilt doc 19 als Modell-Vergleichsbasis,
+nicht als festgelegte Strategie.
+
 Weitere Weg-B-Punkte:
 
 - Steuerbonus § 35c EStG als Alternative für nicht-BEG-fähige Positionen prüfen

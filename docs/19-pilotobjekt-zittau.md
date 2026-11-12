@@ -11,16 +11,22 @@ Dezember-Launch (doc 18).
 
 | Parameter | Wert | Quelle |
 |---|---|---|
-| Adresse | Äußere Weberstr. **72 / 74 / 76**, 02763 Zittau (Sachsen) | OP-Liste Stadt Zittau + Eigentümer-Angabe |
-| Ensemble | **3 Sechsfamilienhäuser = 18 WE**, je Haus 6 WE à 50–55 m² | Eigentümer-Angabe + Exposé (je Haus) |
-| Grundstück | **ca. 2.400 m²**, gegenüber McDonald's & Kaufland | Eigentümer-Angabe |
-| Lage | Direkt an der **B96** (Bundesstraße, hohe Sichtbarkeit) | Eigentümer-Angabe |
-| Baujahr | **1910** (Altbau, Kernsanierung geplant) | Gesamtkonzept v2 |
+| Adresse | Äußere Weberstr. **72 / 74 / 76**, 02763 Zittau (Sachsen) | OP-Liste Stadt Zittau + Verkaufsmappe |
+| Ensemble | **3 Gebäude (ehem. Weberei) = 18 WE**, je Haus 6 × 2-Zimmer-WE à 50–55 m² | Verkaufsmappe |
+| Grundstück | **2.400 m²**, 2 Vollgeschosse + Dachgeschoss | Verkaufsmappe |
+| Lage | **B96**, gegenüber McDonald's (Nr. 83) & Kaufland (200 m), Arztpraxis (76a) benachbart, Westpark Center nahe | Verkaufsmappe |
+| Baujahr | **1910/20**, Ziegelbau/Klinkerfassade | Verkaufsmappe |
+| **Denkmalschutz** | **Kein Baudenkmal** → freie Fassaden-/Fenstergestaltung (amtlich in M1 bestätigen) | Verkaufsmappe |
+| **Städebauförderung** | Sanierungsgebiet **„Zittau-Nord" (bis 2040)** → ZSG-Zustimmung vor Baubeginn einholen | Verkaufsmappe |
+| **Versorgung** | ⚠️ **Hausanschlüsse Strom/Wasser in 72/74 rückgebaut** → Neuantrag Stadtwerke Zittau (SWZ) | Verkaufsmappe Kap. 17 |
+| Verkäufer | S&G Immobilien und Personal GmbH, Frontalstr. 10, 75015 Bretten, HRB 713397 (AG Mannheim), schuldenfrei | Verkaufsmappe |
 | Gesamtfläche | ca. 312 m² je Haus (≈ 936 m² Ensemble) | Gesamtkonzept v2 (je Haus) |
 | Geplante Nutzung | „Betreutes Wohnen", barrierefrei (DIN 18040-2), Außen-Aufzug im Anbau | Gesamtkonzept v2 / LoI |
 | Betreiber | Lokaler Pflegedienst, Generalmietvertrag 10 Jahre (+5 Jahre Option) angestrebt | Exposé / LoI |
-| Finanzierungsrahmen | Kernsanierung ~780.000 € je Haus, KfW-Zuschuss 45 %, eff. 549.000 € je Haus | Gesamtkonzept v2 |
-| Investorenstruktur | Je Haus 6 Anteile à 50.000 € (Exposé-Struktur × 3 = 900.000 € Altbestand) | Exposé |
+| Verkaufsmodell (Verkaufsmappe) | **Unsanierter Verkauf 20.000 € je WE** (120.000 € je Haus), Käufer sanieren selbst (KfW 458 bis 80 % als Selbstnutzer / KfW 261) | Verkaufsmappe Kap. 4/18 |
+| Sanierungsrahmen (Weg A) | Kernsanierung ~780.000 € je Haus, KfW-Zuschuss 45 %, eff. 549.000 € je Haus | Gesamtkonzept v2 |
+| Investorenstruktur (Weg A) | Je Haus 6 Anteile à 50.000 € (Exposé-Struktur × 3 = 900.000 € Altbestand) | Exposé |
+| ⚠️ Preis-Widerspruch | Verkaufsmappe: **20.000 €/WE** vs. Investoren-Exposé: **50.000 €/Anteil** – vor Vermarktung klären, welches Modell/Preis gilt | beide Dokumente |
 
 **Standort-Kontext Zittau (Ostsachsen, Oberlausitz):** eines der kältesten
 Klimagebiete Deutschlands → hohe Heizlast, aber genau deshalb das glaubwürdigste
@@ -33,9 +39,11 @@ mit Sonne – Ertrag live auf autarq.eu") verwandelt die Lage in Dauerwerbung. Z
 macht die B96 den KWL-Filter-Luftpfad (doc 06: Pollen, Feinstaub, Allergiker) zum
 harten Verkaufsargument – Straßenlage = Luftqualität ist ein echtes Thema.
 
-**Offene Punkte aus den Unterlagen:** Im Exposé/Gesamtkonzept stehen Platzhalter
-(`[Name Ihrer GmbH]`, `[Name des Pflegedienstes]`, `[Adresse des Hauses in Zittau]`).
-Foto `20260127_165301.jpg` (Ordner „Grundsteuer Zittau") noch auszuwerten.
+**Quelle der Objektdaten:** Verkaufsmappe „Zittau 72-74-76" (PDF, 23 Seiten, Stand
+November 2026) + Investoren-Exposé + Gesamtkonzept v2 (Drive). **Offene Punkte:**
+Preis-Widerspruch 20k vs. 50k je WE; Platzhalter im Exposé/LoI (`[Name des
+Pflegedienstes]` etc.); Foto `20260127_165301.jpg` (Ordner „Grundsteuer Zittau")
+noch auszuwerten.
 
 ---
 
@@ -179,7 +187,7 @@ MPC/Prognose (alle 18 WE).
 
 | Monat | Schritt |
 |---|---|
-| **M1** | Bestandsaufnahme alle 3 Häuser: Heizlast je WE, 3× Netzanschluss, Dach/Süd-Fassadenflächen, **Denkmalschutz Zittau klären**, EEE beauftragen; Foto „Grundsteuer Zittau" auswerten |
+| **M1** | Bestandsaufnahme alle 3 Häuser: Heizlast je WE, **SWZ-Neuantrag Hausanschluss 72/74**, Dach/Süd-Fassadenflächen, **ZSG (Städebauförderung Zittau-Nord) kontaktieren**, „kein Denkmalschutz" amtlich bestätigen, EEE beauftragen; Foto „Grundsteuer Zittau" auswerten |
 | **M1–M2** | EEE-Rechnung Weg A vs. Weg B (Kap. 2); BEG-Antrag(en) stellen (VOR Verträgen!, Reihenfolge der Häuser optimieren); KfW-261/458-Konditionen tagesaktuell prüfen |
 | **M2–M3** | **Pilot: 2 WE** komplett (P1+P3+P5+P6), SunWall-Fassade 1. Abschnitt an der B96-Sichtseite (mit Hinweistafel), Messaufbau |
 | **M4** | Auswertung Pilot: Ertrag, ΔT, Komfort, Betreiber-Feedback, Kosten real vs. Plan |
@@ -216,10 +224,14 @@ MPC/Prognose (alle 18 WE).
 - **BEG-Treppe:** Klimageschwindigkeitsbonus sinkt (16 % → 0 % bis Aug 2028) –
   Antrag so früh wie möglich; Businessplan mit 30 % Grundförderung kalkulieren
   (Bonus = Upside, nicht Planbasis).
-- **Denkmalschutz / Fassade (Zittau-Altstadtnähe):** SunWall + Außengeräte brauchen
-  ggf. Genehmigung – in M1 klären, bevor die B96-Schaufenster-Wand geplant wird.
-- **Baujahr 1910:** unbekannte Dämmung/Luftdichtheit → Heizlast-Messung in M1;
+- **Fassade/Schaufenster-Wand:** Laut Verkaufsmappe **kein Denkmalschutz** – aber
+  Städebaufördergebiet „Zittau-Nord" (ZSG-Zustimmung vor Baubeginn!) und
+  werbungrechtliche Regeln für die B96-Hinweistafel in M1 klären.
+- **Baujahr 1910/20:** unbekannte Dämmung/Luftdichtheit → Heizlast-Messung in M1;
   KWL-Ziele erst nach Blower-Door realistisch setzen.
+- **Rückgebaute Anschlüsse (72/74):** Strom/Wasser-Neuantrag bei den Stadtwerken
+  Zittau braucht Vorlauf – rechtzeitig stellen, sonst blockiert es Pilot-WE in 72/74
+  (Haus 76 zuerst prüfen).
 - **B96-Lärm:** KWL-Ansaugung und Außengeräte schallgedämmt und von der Straße weg
   positionieren; Filterstufe wegen Straßenstaub großzügiger auslegen (doc 06).
 - **Kapazität:** 18-WE-Sanierung parallel zum Lohnfertigungs-Start (doc 18) kollidiert
@@ -232,8 +244,14 @@ MPC/Prognose (alle 18 WE).
 ## 9. Nächste Schritte
 
 1. Foto `20260127_165301.jpg` (Drive-Ordner „Grundsteuer Zittau") auswerten; fehlende
-   Gebäudedaten ergänzen (3× Dach-/Süd-Fassadenfläche, 3× Netzanschluss, heutige
-   Heizung je Haus, Flurstück/Kataster für das 2.400-m²-Grundstück).
+   Gebäudedaten ergänzen (3× Dach-/Süd-Fassadenfläche, heutige Heizung je Haus,
+   Flurstück/Kataster für das 2.400-m²-Grundstück).
+1a. **Preis-Modellfrage klären:** Verkaufsmappe (20.000 €/WE, Käufer sanieren selbst,
+   Weg C) vs. Investoren-Exposé (50.000 €/Anteil, GmbH saniert, Weg A) – welches
+   Modell gilt pro Haus? Das bestimmt die gesamte Vermarktung.
+1b. **Stadtwerke Zittau (SWZ):** Hausanschluss-Neuantrag für 72/74 stellen;
+   **ZSG Zittau:** Fördergebiet Zittau-Nord/Zustimmung klären (Kontakt in der
+   Verkaufsmappe Kap. 17).
 2. EEE + Notar/Steuerberater: Weg A (KfW 261) vs. Weg B (BEG EM) vs. Weg C
    (Einzelverkauf an Selbstnutzer, 70–80 %) für 18 WE in 3 Häusern durchrechnen
    (Kombinationsverbot!, Reihenfolge der Häuser optimieren) – Entscheidung vor Antrag.

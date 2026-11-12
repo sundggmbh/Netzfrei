@@ -73,6 +73,12 @@ aktuelle Studien 2024/2025) kennt die Optimalparameter:
 | **SW-Pro** (20–100 m²) | Gewerbe, Lager, Trocknung (Holz/Heu/Getreide), Agrar | 6.000–30.000 € |
 | **Zubehör** | PV-Direkt-Ventilator-Set, KWL-Kopplungsset, Puffer-Luft-WT, Mess-Kit | 30–250 € |
 
+**PV-Ventilator als Standard-Option (SW-Solar):** Das PV-Direkt-Ventilator-Set
+(~20–40 € Aufpreis) macht das Modul komplett netzunabhängig – Erntefaktor
+20–100 kWh Wärme pro kWh Strom, null CO2, kein Kältemittel. Förderrechtlich
+ bleibt Solar-Luft trotz der exzellenten CO2-Bilanz listenbedingt ungefördert;
+Analyse und Vermarktungs-Argument: `16-foerdermittel-endkunden.md` Kap. 4.1.
+
 ## 5. Qualität & Technik-Feinschliff (Plan)
 
 1. **Prüfstand:** Pyranometer (~50 €), T-Sensoren vor/nach, Anemometer,

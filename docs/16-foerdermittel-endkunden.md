@@ -96,6 +96,46 @@ gibt es kein BEG-Äquivalent in dieser Form – das Förderargument ist
   (30–100 €/m² Selbstbau bzw. Kleinserie). Förderrelevant wird SunWall erst als
   Komponente in Fachbetriebs-Anlagen (Partner-Netz, Kap. 5).
 
+### 4.1 SunWall und das CO2-Argument (12-V-Ventilator)
+
+Idee aus der Diskussion: SunWall verbraucht fast keinen Strom (12-V-Ventilator) und
+erzeugt rein physikalisch Wärme – könnte man über CO2-Einsparung an
+Fördermittel kommen?
+
+**Ehrliche Antwort: Die CO2-Ersparnis allein öffnet keine Fördertür.** Die BEG ist
+listenbasiert, nicht bilanzbasiert: Gefördert wird, was auf der Maßnahmen-Liste steht
+– nicht was rechnerisch CO2 spart. Beweis dafür: Elektrische Widerstandsheizungen
+wurden 2020 gestrichen, obwohl ihre CO2-Bilanz je nach Strommix mit Gas mithält.
+Solar-Luft steht nicht auf der Liste, und in den Landesprogrammen (BW, BY, NRW u. a.)
+gibt es aktuell keine Solarluft-Zuschüsse (Recherche 2025/2026: Förderung läuft dort
+fast nur über PV/Speicher).
+
+**Aber – drei reale Wege bleiben:**
+
+1. **BEG WG (Komplettsanierung zum Effizienzhaus):** Hier entscheidet ein
+   Energie-Effizienz-Experte (EEE), welche Anlagenkomponenten in die Bilanz
+   einfließen. Eine SunWall-Wand, die die Heizlast senkt, kann als Teil der
+   Wärmeversorgung gewertet werden – verhandelbar, nicht garantiert. Genau dafür
+   bauen wir das Partner-Netz mit EEE-Kontakt auf (Kap. 5).
+2. **Kommunale Klimaschutz-/Pilotförderung:** Für Demonstrations- und
+   Pilotanlagen (Kommunen, Wohnungsbaugesellschaften, Schulen) gibt es
+   BAFA-/kommunale Klimaschutzprogramme außerhalb der BEG. Das ist ein
+   B2B-/Referenz-Weg, kein Endkunden-Zuschuss – aber ideal für die ersten
+   Mess-Installationen (Roadmap P1, `13-produkt-sunwall.md`).
+3. **Das CO2-Argument richtig einsetzen – als Ertragszahl, nicht als Förderantrag:**
+   Der 12-V-Ventilator zieht 5–15 W bei ~1.000–2.000 Betriebsstunden/Jahr
+   (= 5–30 kWh/a). Ein 2-m²-Modul liefert 600–1.000 kWh Wärme/Jahr. Das ist ein
+   **Erntefaktor von ca. 20–100 kWh Wärme pro kWh Strom** – eine Wärmepumpe
+   schafft mit COP 3–4 nur 3–4. Mit PV-Ventilator (kleines 10-W-Panel) ist SunWall
+   sogar 100 % netzunabhängig: null Strom, null CO2, null Kältemittel. Das ist
+   das stärkste Verkaufsargument – stärker als jeder Zuschuss, weil es den
+   Betriebskosten-Satz trägt: „Wärme ohne laufende Kosten, nicht nur billiger.“
+
+**Konsequenz für das Produkt-Design:** PV-Ventilator-Variante (SW-Solar) als
+Standard-Option in die Produktlinie aufnehmen (`13-produkt-sunwall.md` Kap. 4) – sie
+kostet ~20–40 € extra, macht das Produkt komplett autark und erledigt das
+CO2-Argument marketingtechnisch von selbst.
+
 ---
 
 ## 5. Die DIY-Falle (ehrlich) und unsere Strategie

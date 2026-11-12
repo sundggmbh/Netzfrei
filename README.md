@@ -58,7 +58,8 @@ autarq/
 ├── software/
 │   └── (EMS-Code, Simulation, Tests, Home-Assistant – unverändert)
 ├── website/                 ← **SunWall-Webseite** (statisch, GitHub-Pages-fähig): Landing, Produkte, Förder-Check, FAQ
-│   └── broschuere.html     ← Infobroschüre (A4-Drucklayout, 2 Seiten, PDF via Browser-Druck)
+│   ├── broschuere.html     ← Infobroschüre (A4-Drucklayout, 2 Seiten, PDF via Browser-Druck)
+│   └── bauanleitung.html   ← **Bauanleitung v1**: Stückliste, 10 Schritte, Mess-Formel, Fehlerbehebung
 ├── marketing/
 │   └── anzeigen-texte.md   ← Fertige Anzeigentexte (Kleinanzeigen, eBay, FB, Google, Wartelisten-Mail, Aushang, TR)
 │   ├── README.md              ← **Netzfrei-Software**: Architektur, EMS-Regeln, Setup

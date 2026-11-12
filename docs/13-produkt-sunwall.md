@@ -122,6 +122,9 @@ Analyse und Vermarktungs-Argument: `16-foerdermittel-endkunden.md` Kap. 4.1.
   siehe `17-go-to-market.md` – Umsetzung als statische Webseite in `website/`.
 - **Launch-Materialien:** Countdown-Plan `18-dezember-launch.md`, Anzeigentexte
   `marketing/anzeigen-texte.md`, Druck-Broschüre `website/broschuere.html`.
+- **Bauanleitung v1:** vollständig ausgearbeitet als druckfähige Seite
+  `website/bauanleitung.html`: Stückliste mit
+  Bezugsquellen, 10 Schritte, Mess-Formel (P ≈ 0,335 · V̇ · ΔT), Fehlerbehebung.
 
 ## 7. Roadmap zum Produkt
 

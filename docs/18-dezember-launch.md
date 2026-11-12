@@ -54,8 +54,10 @@ sucht ab November/Dezember. Der Countdown richtet sich auf „live vor Jahreswec
 
 **Spezifisch verbessert (Produkt):**
 
-- [ ] Bauanleitung v1: Schritt-für-Schritt mit Stückliste, Werkzeugliste, 3
-      häufigsten Fehlern (Undichtigkeit, Windlage, falsche Ventilator-Drehzahl)
+- [x] Bauanleitung v1: Schritt-für-Schritt mit Stückliste/Bezugsquellen,
+      Werkzeugliste, Mess-Formel und Fehlerbehebung-Tabelle – fertig als
+      `website/bauanleitung.html` (A4-druckfähig; Fotos folgen vom Prototyp-Bau,
+      Platzhalter markiert)
 - [ ] Verpackung/Transportschutz fürs Lochblech (Kante!) definieren
 - [ ] QC-Checkliste je Modul: Dichtheit, Lüfterlauf, Sichtprüfung Beschichtung,
       Messwert-Protokoll (wird dem Kunden beigelegt)
@@ -85,7 +87,9 @@ Die offene Bauanleitung ist der Vertrauens- und SEO-Anker (doc 13 Kap. 6). Struk
 7. Hinweis: Wer sparen will, kauft den geprüften Bausatz (Link) – Selbstbau ist
    möglich, aber ohne QC und ohne Messprotokoll
 
-Ziel: PDF + Repo-Seite, **W4** fertig, als Anhang in Inseraten und Wartelisten-Mail.
+Ziel erreicht: `website/bauanleitung.html` (druckfähig als PDF). Ausstehend:
+Prototyp-Fotos in die 10 Foto-Platzhalter einsetzen (**W2–W3**), dann als Anhang
+in Inseraten und Wartelisten-Mail.
 
 ---
 

@@ -67,7 +67,7 @@ Produktspezifikation, nicht die Serie.
 | **A Produkt** | Prototyp-BOM bestellen, Prüfstand-Teileliste | Erste Messkennlinie, Lohnfertigung-RFI an 3 Blechzentren | `12-sonnenluftkollektor.md`, `14-produktion-auftragsfertigung.md` |
 | **B Web** | **Webseite live** (dieses Repo, `website/`), Domain, E-Mail | Bestellablauf (Rechnung/Vorkasse), erste Warteliste anschreiben | `website/README.md` |
 | **C Partner** | 3 SHK-Betriebe + 1 EEE anschreiben (RFI-Vorlage) | Förder-Check-Formular verfeinern, Partner-Seite mit Logo | `16-foerdermittel-endkunden.md` |
-| **D Content** | Bauanleitung v1 als PDF/Repo-Seite, 3 SEO-Artikel | Bautagebuch-Video 1, Messdaten-Widget auf Startseite | `13-produkt-sunwall.md` Kap. 6 |
+| **D Content** | ~~Bauanleitung v1~~ erledigt (`website/bauanleitung.html`), 3 SEO-Artikel | Bautagebuch-Video 1, Messdaten-Widget auf Startseite | `13-produkt-sunwall.md` Kap. 6 |
 
 ---
 

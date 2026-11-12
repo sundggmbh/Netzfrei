@@ -66,6 +66,9 @@ je nach Region in 8–15 Jahren – in sonnenreichen Regionen schneller.
 ### Phase 5 – Verbreitung
 - [ ] **SunWall-Produktlinie** (Sonnen-Luftkollektor als eigene Marke, siehe
       `13-produkt-sunwall.md`): Prototyp → Kleinserie → Onlineshop
+- [ ] **Auftragsfertigung aufbauen** (siehe `14-produktion-auftragsfertigung.md`):
+      RFQ an Blechzentren DE/PL/TR, Ventilator-Direktimport, Fördermittel-Anträge
+      (StartGeld, Forschungszulage für Prüfstand, ZIM), Marken-Anmeldung DPMA/EUIPO
 - [ ] Open-Hardware-Dokumentation (Bauanleitungen, Stücklisten)
 - [ ] Partner für Serienfertigung der kompakten WP
 - [ ] Anleitung für Selbstbauer in allen Klimazonen

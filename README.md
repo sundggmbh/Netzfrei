@@ -47,7 +47,8 @@ autarq/
 │   ├── 10-smart-home-systeme.md ← Systemvergleich & Einkaufsliste für Netzfrei
 │   └── 11-klimageraete-umbau.md ← Klimageräte als günstige WP: 5 Umbau-Pfade, Pakete
 │   ├── 12-sonnenluftkollektor.md ← Wärme aus schwarzem Lochblech (30–100 €/m²)
-│   └── 13-produkt-sunwall.md  ← **SunWall**: Kollektor als Produkt/Marke (Markt, Spez, Roadmap)
+│   ├── 13-produkt-sunwall.md  ← **SunWall**: Kollektor als Produkt/Marke (Markt, Spez, Roadmap)
+│   └── 14-produktion-auftragsfertigung.md ← **SunWall-Produktion**: Lohnfertigung, Standorte, Material, Fördermittel
 └── tools/
     └── auslegung.py           ← Auslegungsrechner (Bedarf → Komponenten → Kosten)
 ```

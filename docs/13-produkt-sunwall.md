@@ -99,7 +99,9 @@ aktuelle Studien 2024/2025) kennt die Optimalparameter:
 - **Preis-Logik:** Material × 1,5–2 (Bausatz) bzw. × 2,5–3 (fertig) – fair
   gegenüber der DIY-Szene, tragfähig für Serienfertigung.
 - **Fertigung:** Start mit Lohnfertigung (Blechzentrum + Beschichtung +
-  Bausatz-Montage), ab ~500 Modulen/Jahr eigene Fertigung wirtschaftlich.
+  Bausatz-Montage), ab ~500 Modulen/Jahr eigene Fertigung wirtschaftlich –
+  Details, Standorte, Materialpreise und Fördermittel: siehe
+  `14-produktion-auftragsfertigung.md`.
 
 ## 7. Roadmap zum Produkt
 

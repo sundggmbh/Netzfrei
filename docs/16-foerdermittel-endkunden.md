@@ -235,3 +235,5 @@ Integration in die Vermarktungs-Architektur (`13-produkt-sunwall.md` Kap. 6):
 4. Optional im Auslegungsrechner (`tools/auslegung.py`): Flag `--foerderung` für eine
    grobe Zuschussschätzung (30 % / 70 % / 80 % auf Anlage + Fachmontage).
 5. Landesprogramme für die Pilotregionen (NRW, BY, TR-Markt separat) recherchieren.
+6. MFH-Fall konkret: 18-Wohnungen-Pilot der GmbH (BEG-Stufen je WE, EEE,
+   Kombinationsverbot) – siehe `19-pilot-18-wohnungen.md` Kap. 2.

@@ -131,3 +131,6 @@ Warteliste live) steht in `18-dezember-launch.md`; fertige Anzeigentexte in
 3. Prototyp-BOM bestellen (Track A Start), Prüfstand nach doc 13 Kap. 5.
 4. RFI an 3 Blechzentren (doc 14 Vorlage) mit Charge-1-Stückzahl 50.
 5. DPMA-Voranfrage „SunWall"/„Netzfrei" (Klassen 11, 9, 35).
+6. Parallel: 18-Wohnungen-Sanierung der GmbH als Pilot-/Demo-Objekt vorbereiten
+   (`19-pilot-18-wohnungen.md`) – Charge-1-Material fließt zuerst in die
+   Pilot-WE; das Objekt wird Referenz für die Januar-Kampagne.

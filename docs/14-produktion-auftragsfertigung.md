@@ -103,6 +103,54 @@ Dämmung, Verpackung) dort, wo sie am günstigsten sind.
 Auch die **Firmensitz-Frage** (Türkei-Steuerprogramm 2026) gehört in diese
 Entscheidung – siehe Kap. 8.
 
+### 4.4 Türkei nicht nur als Fertigungs-, sondern als Absatzmarkt
+
+Die Türkei ist zugleich einer der besten Märkte für SunWall selbst:
+
+**Sonnenangebot (Vorteil gegenüber Mitteleuropa):**
+
+| Kennzahl | Türkei | Deutschland |
+|---|---|---|
+| Globale Einstrahlung (GHI) | **~1.500–1.700 kWh/m²·a** (Südost-Anatolien/Mittelmeer höher) | ~900–1.200 kWh/m²·a |
+| Sonnenscheinstunden/Jahr | **~2.700–3.000 h** | ~1.600–1.900 h |
+| Konsequenz für SW-2.0 | Jahresertrag pro Modul **~700–1.100 kWh** statt 400–700 kWh | Referenz aus `13-produkt-sunwall.md` |
+
+**Heizmarktkontext (Warum die Nachfrage stimmt):**
+
+- Der türkische Wärmemarkt ist von **importiertem Erdgas** dominiert
+  (> 10 Mio. Haushalte am Gasnetz) – Heizkosten sind importabhängig und
+  währungsrisikobehaftet (TRY-Abwertung schlägt direkt auf die Gasrechnung).
+- **Ländliche Regionen** (Ost-/Südost-Anatolien, Schwarzes Meer-Inland) heizen
+  traditionell mit Holz/Kohle – ein billiges, sauberes Solar-Luftsystem hat
+  dort eine klare Geschichte (Brennstoffkosten ≈ 0, Lüftung obendrauf).
+- Zentral-/Ostanatolien hat **kalte Winter** (z. B. Erzurum) **und** viel
+  Sonne – genau das Profil, für das ein Luftkollektor mit 20–40 K ΔT ideal ist.
+- Die türkische Solarthermie-Industrie (Weltmarktführer bei einfachen
+  Warmwasser-Thermosiphon-Anlagen, z. B. Kuzeymak, Simsek) hat **Luftkollektoren
+  als Nische noch kaum besetzt** – die Marktlücke aus `13-produkt-sunwall.md`
+  gilt in der Türkei sogar stärker als in Deutschland.
+
+**Vertriebs-Vorteile durch den Standort (Synergie mit Kap. 4.3/8):**
+
+- Fertigung **im Markt**: türkische Kunden können direkt ab Werk beliefert
+  werden (keine Importkette, kürzere Lieferzeiten, lokale Garantie).
+- **Türkischsprachiger Support** am Produktionsstandort aufbaubar.
+- Türkei als **Sprungbrett**: Export in den Nahen Osten, Zentralasien, Balkan
+  (hohe Einstrahlung, hohe Heizkosten, dünne Konkurrenz bei Luftkollektoren).
+- Zollunion: umgekehrte Richtung funktioniert identisch (DE-Kunden zollfrei).
+
+**Anforderungen/Risiken für den türkischen Markt:**
+
+- **CE + TSE-Konformität** für den türkischen Markt einplanen (neben Solar-
+  Keymark für die EU-Qualitätsaussage).
+- **Kaufkraft/Preissensibilität:** Preisanker eher SW-U (Bausatz, unteres
+  Preisband); SW-G/SW-Pro zuerst für Export und Gewerbe (Trocknung, Gewächs-
+  häuser, Werkstätten).
+- **Wettbewerb durch lokale Billiganbieter** ist wahrscheinlicher als in DE –
+  Differenzierung über Qualität (Prüfstand, Messdaten) + Netzfrei-Integration.
+- Vertrieb in TRY ist währungsrisikobehaftet → Preise indexiert oder in EUR
+  für B2B/Gewerbekunden.
+
 ## 5. Materialbeschaffung: Stückpreise nach Menge
 
 Alle Werte sind Markt-Erfahrungswerte (Blechhandel, Großhandel, Direktimport),

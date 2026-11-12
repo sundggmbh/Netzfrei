@@ -27,6 +27,11 @@ Der transpirierte Sonnen-Luftkollektor (schwarzes Lochblech, siehe
 Einzelteil fehlt ein **modulares, smartes, dokumentiertes Bausatz-System im
 DIY-Preisband** – genau das ist SunWall.
 
+**Hinweis Absatzmarkt Türkei:** mit ~1.500–1.700 kWh/m²·a Einstrahlung,
+> 10 Mio. Gas-Heizungen (importabhängig) und kaum besetzter Luftkollektor-
+Nische ist die Türkei zugleich Fertigungs- **und** Zielmarkt – Details in
+`14-produktion-auftragsfertigung.md` Kap. 4.4.
+
 ## 3. Optimale Bauweise (aus der Forschung, Stand der Technik)
 
 Die Kollektor-Forschung (40+ Jahre, u. a. Kutscher 1992, Gawlik/Kutscher 2002,

@@ -64,7 +64,7 @@ Das System kombiniert drei Hebeleben nach Kosten-Nutzen:
 - **Gezielte Zonenkühlung:** Nur der Aufenthaltsraum wird gekühlt, nicht das
   ganze Gebäude – gleiche Logik wie beim gezielten Heizen.
 - **Entfeuchtung:** Die WP erzeugt im Kühlbetrieb 9–12 °C kaltes Wasser; ein
-  kleiner Umluft-Konvektor (oder die Lüftungsanlage, siehe `06-frischluft.md`)
+  kleiner Umluft-Konvektor (oder die Lüftungsanlage, siehe `06-frischluft-allergiker.md`)
   führt Luft über den Kühler unter Taupunkt → Kondensat ab. Entfeuchtung ist
   damit ein Nebenprodukt – **kein extra Entfeuchter nötig**.
 

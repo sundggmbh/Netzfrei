@@ -28,7 +28,7 @@ Solar-Keymark – und kann mit Lohnfertigung (doc 14) sofort in Kleinserie gebau
 
 - ΔT bis 40 K bei klarem Winterlicht, 400–800 W je 2-m²-Modul (SW-G)
 - Jahresertrag 400–700 kWh pro Modul (Mitteleuropa, Südfassade)
-- Erntefaktor 20–100 kWh Wärme pro kWh Strom (12-V-Ventilator); SW-Solar: null
+- Erntefaktor 20–80 kWh Wärme pro kWh Strom (12-V-Ventilator); SW-Solar: null
   Netzstrom
 - Material ~30–80 €/m² – wir verkaufen das geprüfte, dokumentierte Bausatz-System
   im DIY-Preisband
@@ -120,6 +120,10 @@ Produktspezifikation, nicht die Serie.
 ---
 
 ## 6. Nächste Schritte
+
+Der konkrete Wochen-Countdown bis zum Dezember-Launch (Inserate, Broschüre,
+Warteliste live) steht in `18-dezember-launch.md`; fertige Anzeigentexte in
+`marketing/anzeigen-texte.md`, die Druck-Broschüre in `website/broschuere.html`.
 
 1. Webseite-Review + Domain + Impressum-Daten → Pre-Launch.
 2. Wartelisten-Text scharf stellen (Charge-1-Limit „50 Module" ehrlich an

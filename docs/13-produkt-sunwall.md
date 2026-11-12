@@ -75,7 +75,8 @@ aktuelle Studien 2024/2025) kennt die Optimalparameter:
 
 **PV-Ventilator als Standard-Option (SW-Solar):** Das PV-Direkt-Ventilator-Set
 (~20–40 € Aufpreis) macht das Modul komplett netzunabhängig – Erntefaktor
-20–100 kWh Wärme pro kWh Strom, null CO2, kein Kältemittel. Förderrechtlich
+20–80 kWh Wärme pro kWh Strom (sonnenreiche Lagen: bis 100+), null CO2,
+kein Kältemittel. Förderrechtlich
 bleibt Solar-Luft trotz der exzellenten CO2-Bilanz listenbedingt ungefördert;
 Analyse und Vermarktungs-Argument: `16-foerdermittel-endkunden.md` Kap. 4.1.
 
@@ -119,6 +120,8 @@ Analyse und Vermarktungs-Argument: `16-foerdermittel-endkunden.md` Kap. 4.1.
 - **Verkaufsfertigkeit & Launch:** MVP-Produktdefinition (Bausatz ab Tag 1),
   Wartelisten-Strategie, 4 parallele Arbeitstracks und rechtliches Minimum:
   siehe `17-go-to-market.md` – Umsetzung als statische Webseite in `website/`.
+- **Launch-Materialien:** Countdown-Plan `18-dezember-launch.md`, Anzeigentexte
+  `marketing/anzeigen-texte.md`, Druck-Broschüre `website/broschuere.html`.
 
 ## 7. Roadmap zum Produkt
 

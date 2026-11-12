@@ -125,7 +125,8 @@ fast nur über PV/Speicher).
 3. **Das CO2-Argument richtig einsetzen – als Ertragszahl, nicht als Förderantrag:**
    Der 12-V-Ventilator zieht 5–15 W bei ~1.000–2.000 Betriebsstunden/Jahr
    (= 5–30 kWh/a). Ein 2-m²-Modul liefert 600–1.000 kWh Wärme/Jahr. Das ist ein
-   **Erntefaktor von ca. 20–100 kWh Wärme pro kWh Strom** – eine Wärmepumpe
+   **Erntefaktor von ca. 20–80 kWh Wärme pro kWh Strom** (sonnenreiche Lagen
+   bis 100+) – eine Wärmepumpe
    schafft mit COP 3–4 nur 3–4. Mit PV-Ventilator (kleines 10-W-Panel) ist SunWall
    sogar 100 % netzunabhängig: null Strom, null CO2, null Kältemittel. Das ist
    das stärkste Verkaufsargument – stärker als jeder Zuschuss, weil es den

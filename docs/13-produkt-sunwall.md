@@ -116,6 +116,9 @@ Analyse und Vermarktungs-Argument: `16-foerdermittel-endkunden.md` Kap. 4.1.
 - **Fördermittel & Förder-Check:** Förderfähigkeit je Produkt, DIY-Falle
   (Fachbetriebs-Pflicht) und der geplante „Förder-Check“ als Verkaufs-Feature:
   siehe `16-foerdermittel-endkunden.md`.
+- **Verkaufsfertigkeit & Launch:** MVP-Produktdefinition (Bausatz ab Tag 1),
+  Wartelisten-Strategie, 4 parallele Arbeitstracks und rechtliches Minimum:
+  siehe `17-go-to-market.md` – Umsetzung als statische Webseite in `website/`.
 
 ## 7. Roadmap zum Produkt
 

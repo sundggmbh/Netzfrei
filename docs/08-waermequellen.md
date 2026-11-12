@@ -3,8 +3,10 @@
 ## 1. Solar-Luftkollektor: Heizen schon bei kurzer Sonneneinstrahlung
 
 Der einfachste und billigste Wärmeerzeuger überhaupt – **ohne Wasser, ohne
-Frostschutz, ohne Pumpe**: Ein schwarzer Absorber hinter Glas/Polycarbonat,
-Raumluft oder Frischluft strömt hindurch und kommt 17–28 K wärmer zurück.
+Frostschutz, ohne Pumpe**: Ein schwarzer Absorber (Lochblech mit Zwangs-
+Wirbelung) hinter Glas/Polycarbonat, Raumluft oder Frischluft strömt hindurch
+und kommt 17–28 K wärmer zurück. **Detaildokument mit Selbstbau-Anleitung,
+Leistungswerten und Integration: `12-sonnenluftkollektor.md`.**
 
 **Recherche-Werte (DIY-praxisbelegt, u. a. BuildItSolar-Messreihen):**
 

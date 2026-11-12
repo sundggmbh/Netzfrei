@@ -24,9 +24,10 @@ Ländern, und Abwärmenutzung von Servern, Computern, Kühlschränken und Tiefk�
    10–15 €/m², einfach streichen/verlegen) liefern gezielte Strahlungswärme direkt
    vom PV-Überschuss; die Lüftungsanlage mit F9-Filter liefert pollenfreie Frischluft
    und entfeuchtet – für Allergiker geeignet.
-6. **Gratis-Wärme überall abschöpfen.** Solar-Luftkollektoren (DIY ab 30 €/m²),
-   Abwärme von Kühl-/Tiefkühlschränken und die Abluft der Lüftung als WP-Quelle:
-   zusammen fast der gesamte Heizwärmebedarf eines Neubaus.
+6. **Gratis-Wärme überall abschöpfen.** Sonnen-Luftkollektoren aus schwarzem
+   Lochblech (DIY 30–100 €/m², nur ein 5–20-W-Ventilator, bis 40 K Luft-
+   temperaturanstieg), Abwärme von Kühl-/Tiefkühlschränken und die Abluft der
+   Lüftung als WP-Quelle: zusammen fast der gesamte Heizwärmebedarf eines Neubaus.
 
 ## Projektstruktur
 
@@ -45,6 +46,7 @@ autarq/
 │   ├── 09-kaeltemittel-niedertemperaturhub.md ← R290 & 1–3 K-Hub-Betrieb (COP 8–15)
 │   ├── 10-smart-home-systeme.md ← Systemvergleich & Einkaufsliste für Netzfrei
 │   └── 11-klimageraete-umbau.md ← Klimageräte als günstige WP: 5 Umbau-Pfade, Pakete
+│   └── 12-sonnenluftkollektor.md ← Wärme aus schwarzem Lochblech (30–100 €/m²)
 └── tools/
     └── auslegung.py           ← Auslegungsrechner (Bedarf → Komponenten → Kosten)
 ```

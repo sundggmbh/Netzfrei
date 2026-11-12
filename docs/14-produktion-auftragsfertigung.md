@@ -100,6 +100,9 @@ richtige Anleitung“) und spart Lohnkosten.
 Lochblech, Elektronik) zuerst EU-nah; einfache Teile (Rückwand, Rahmen,
 Dämmung, Verpackung) dort, wo sie am günstigsten sind.
 
+Auch die **Firmensitz-Frage** (Türkei-Steuerprogramm 2026) gehört in diese
+Entscheidung – siehe Kap. 8.
+
 ## 5. Materialbeschaffung: Stückpreise nach Menge
 
 Alle Werte sind Markt-Erfahrungswerte (Blechhandel, Großhandel, Direktimport),
@@ -193,7 +196,74 @@ Zuverlässigkeit/Lead-time (20 %), Kommunikation (15 %), Standort/Logistik
 teilweise kombinierbar, aber **De-minimis-Grenzen** tracken; Hausbank ist bei
 KfW-Krediten immer der erste Ansprechpartner.
 
-## 8. IP- und Markenschutz
+## 8. Türkei als Firmensitz: Steuer-Programm 2026 und Realitätscheck
+
+### 8.1 Was tatsächlich angekündigt wurde (Recherche-Stand)
+
+Im April 2026 hat die Türkei das Programm „Türkiye Yüzyılı – Strong Center for
+Investment" (Strong Investment Hub Program) angekündigt; Teile sind als Gesetz
+Nr. 7582 bzw. neuer Art. 20/D EStG (TR) in Kraft bzw. auf dem Weg ins Parlament:
+
+| Maßnahme | Inhalt | Bedingung/Einschränkung |
+|---|---|---|
+| **20 Jahre Steuerbefreiung für Auslands-Einkünfte** | Zuziehende Personen zahlen keine türkische Steuer auf **ausländische** Einkünfte (Dividenden, Veräußerungsgewinne, Vermietung) | Nur für Personen, die in den letzten 3 Jahren **nicht** türkische Steuerresidenten waren; Erbschaft/Schenkung 1 % |
+| **95–100 % Befreiung Regional-HQ** | Gewinne aus regionalen Hauptquartier-/Management-Funktionen, 20 Jahre | gilt für die HQ-Tätigkeit, nicht pauschal fürs ganze Unternehmen |
+| **Reduzierte KSt für Exporteure** | angekündigt ~9 % Körperschaftsteuer für Fertigungs-Exporteure | **Ankündigung**, Gesetzestext/Details offen; Inlandsumsatz nicht befreit |
+| **Transit-Handel / IFC** | nahezu vollständige Befreiung; Istanbul Finance Centre: Fee-Befreiung 5 → 20 Jahre | betrifft Handels-/Finanzplätze, nicht Fertigung |
+| **One-Stop-Shop** | Firmengründung, Arbeitserlaubnis, Genehmigkeiten über eine digitale Plattform (Presidential Investment Office) | Verwaltungsvereinfachung |
+| **Technoparks (Law 4691)** | KSt-Befreiung für Software-/F&E-Erlöse aus der Zone (bis 31.12.2028) | nur Software/R&D-Erlöse, nicht Hardware-Verkauf |
+
+### 8.2 Was das NICHT bedeutet (ehrlicher Realitätscheck)
+
+- **Kein Pauschal-„0 % Steuern" für umgezogene deutsche Fertigungsfirmen.**
+  Die großen Befreiungen zielen auf (a) Auslands-Einkünfte von **Personen**,
+  (b) Regional-HQ-Funktionen, (c) Transit-/Finanzgeschäft. Wer in der Türkei
+  **produziert und verkauft**, zahlt dort reguläre Körperschaftsteuer
+  (~25 % Standard; 9 % für Exporteure nur angekündigt).
+- **Deutschland bleibt angekoppelt:**
+  - DBA Deutschland–Türkei (2011) verteilt die Besteuerungsrechte; die
+    Ansässigkeit entscheidet, nicht der Satzungssitz allein – der **Ort der
+    Geschäftsleitung** zählt.
+  - Bleibt in Deutschland ein **Lager, Montage oder Service** (unser
+    Hybrid-Modell, Kap. 4.3), ist das eine **deutsche Betriebsstätte** – die
+    dazugehörigen Gewinne bleiben in DE steuerpflichtig.
+  - **Wegzugsbesteuerung § 6 AStG:** Wer mit ≥ 1 % an einer deutschen GmbH
+    beteiligt ist und wegzieht, muss auf stille Reserven ggf. Steuern
+    zahlen – bei einer Firma mit Wert (Marke, Kundenstamm) ein echtes Thema.
+  - **§ 2 AStG (erweiterte beschränkte Steuerpflicht):** deutsche
+    Staatsangehörige bleiben nach Wegzug bis zu 10 Jahre für bestimmte
+    inländische Einkünfte und Situationen an Deutschland angebunden.
+- **Türkei-Risiken bleiben:** zweistellige Inflation, TRY-Abwertung,
+  Rechtsdurchsetzung; Verträge in EUR, kurze Zahlungsziele (Kap. 10).
+- **Fördernachteil:** KfW/BAFA/ZIM/Forschungszulage gibt es nur für deutsche
+  Betriebsstätten/Gesellschaften – ein früher Wegzug verzichtet auf genau die
+  Zuschüsse, die in P1–P3 mehr wert sind als jede Steuerersparnis (in der
+  Anfangsphase sind Verluste zu erwarten; Steuern fallen auf Verluste keine an).
+
+### 8.3 Praktische Strategie für SunWall (Staffelplan)
+
+| Zeitraum | Schritt | Begründung |
+|---|---|---|
+| **Jahr 0–2 (P1–P3)** | Gründung in **Deutschland**; Fördermittel nutzen (Kap. 7); Struktur „wegzugsfähig" halten: keine überflüssigen stillen Reserven, IP-Dokumentation sauber getrennt | Zuschüsse + Marktzugang EU + einfache Buchhaltung schlagen Steuerersparnis auf Verlustebene |
+| **Jahr 2–3 (P4)** | Wenn das türkische Programm **Gesetz ist und die Details klar**: prüfen, eine **Sales-/Holding-Gesellschaft in der Türkei** (Regional-HQ-Regime) zu platzieren und die Serienfertigung der Blechteile dorthin zu verlagern (ohnehin geplant, Kap. 4.3) | Hier greifen die Befreiungen tatsächlich: HQ-/Vertriebsfunktion + Export |
+| **Weiterhin** | Deutsche GmbH bleibt als **Lager-/Service-Betriebsstätte** für EU-Kunden (schnelle Lieferung, Gewährleistung) | EU-Marktzugang, aber: Gewinne dieser DE-Betriebsstätte bleiben DE-steuerpflichtig |
+| **Vor jedem Schritt** | Deutsch-türkischer Steuerberater: Wegzugsbesteuerung, DBA, § 2 AStG, Betriebsstätten-Fiktionsprüfung; Kosten der Umsetzung (Beratung, Umzug, Buchhaltung zweiländig) gegen die reale Ersparnis rechnen | Bei Kleinserie ist die Ersparnis oft kleiner als der Aufwand |
+
+**Faustregel:** „Steuerparadies" ist die Türkei für dieses Projekt erst ab dem
+Punkt, an dem **Gewinne** anfallen (P4/P5) – und selbst dann nur für die
+Teile des Geschäfts, die die Befreiungen wirklich abdecken. Die Anfangsphase
+gewinnt deutlich mehr durch deutsche Fördermittel als durch Steuervermeidung.
+
+### 8.4 Offene Punkte (beobachten)
+
+- [ ] Gesetzgebung zum Strong Investment Hub Program verfolgen (Umsetzung der
+      angekündigten 9 % Exporteure-KSt, Regional-HQ-Bedingungen, Schwellen)
+- [ ] Kriterien des Regional-HQ-Regimes: Mindestbeschäftigung, Mindestumsatz,
+      Tätigkeitsanforderungen – entscheiden über Machbarkeit für ein
+      Kleinstunternehmen
+- [ ] Erstgespräch mit deutsch-türkischer Steuerkanzlei sobald P4 näher rückt
+
+## 9. IP- und Markenschutz
 
 - **Marke:** „SunWall“ und „Netzfrei“ früh als Wortmarke beim **DPMA**
   (Deutschland, ~290 € je Klasse) bzw. **EUIPO** (EU, ~850 €) sichern –
@@ -209,8 +279,11 @@ KfW-Krediten immer der erste Ansprechpartner.
 - **Verträge mit Fertigern:** schriftlich, mit Geheimhaltungs-, Werkzeug-,
   Ausschuss- und Gewährleistungsregelung; kein Exklusivrecht ohne Kompensation.
 
-## 9. Risiken und Grenzen
+## 10. Risiken und Grenzen
 
+- **Türkei-Steuerprogramm:** die 20-Jahres-Befreiungen sind teils noch
+  Gesetzesvorlage und decken nicht das ganze Geschäft ab (siehe Kap. 8) –
+  keine Struktur-Entscheidung auf Basis von Schlagzeilen.
 - **Preisangaben sind Erfahrungswerte, keine Angebote** – alles muss per RFQ
   (Kap. 6) verifiziert werden; Blech- und Elektronikpreise schwanken deutlich
   (Alu/Stahl-Börsen, Halbleiter-Zyklen).
@@ -225,8 +298,10 @@ KfW-Krediten immer der erste Ansprechpartner.
 - **Fördermittel sind zweckgebunden** und erfordern Verwendungsnachweise;
   keine Zusagen vor Antrag. Programme ändern sich jährlich – Stand prüfen.
 
-## 10. Nächste Schritte
+## 11. Nächste Schritte
 
+- [ ] Türkisches Investitionsprogramm (Strong Investment Hub) beobachten;
+      Sitz-Strategie erst bei Gesetzestext + Beratergespräch festlegen (Kap. 8)
 - [ ] NDA-Vorlage + RFI an 5–8 Blechzentren (DE/PL/TR) senden, Angebote einholen
 - [ ] Ventilator-RFQ: EU-Großhandel vs. Direktimport (MoQ, Muster) vergleichen
 - [ ] Prüfstand (P1) als Forschungszulage-Projekt skizzieren (Steuerberater/FZulG)

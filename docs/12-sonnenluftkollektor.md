@@ -79,7 +79,64 @@ Luftzug") ist mit Glasabdeckung und gedrosseltem Volumenstrom reproduzierbar.
 - **Doppelnutzung im Sommer:** Nachts verkehrt betrieben = Nachtauschkühler
   (Blech strahlt in den Himmel, Luft kühlt das Gebäude).
 
-## 5. Integration ins Gesamtsystem
+## 6. Server-Ventilatoren & Server-Abluft integrieren
+
+### 6.1 Server-Lüfter als Kollektor-Antrieb (gratis Hochtechnologie)
+
+Ausrangierte Server liefern **Hot-Swap-EC-Ventilatoren** (40/60/80 mm,
+12 V, PWM-geregelt, 50.000+ h Lebensdauer) – normalerweise Schrott, für den
+Kollektor erstklassige Antriebe:
+
+| Vorteil | Auswirkung |
+|---|---|
+| **12 V DC, PWM-steuerbar** | Direkt am PV-Modul (12-V-Panel + Ladecontroller oder direkt mit Überspannungsschutz) – kein Wechselrichter, kein Netz, kein Netzteil nötig |
+| **Stufenlos regelbar (PWM)** | Netzfrei steuert den Volumenstrom nach Einstrahlung – genau die Regelung, die der Kollektor braucht |
+| **Kaskadierbar** | 2–6 Lüfter parallel = Redundanz (ein Ausfall fällt nicht auf) und mehr Druck für Lochblech-Gegendruck |
+| **Kosten** | ~0 € aus ausrangierten Servern (Ersatzteilmarkt sonst 5–15 €/Stück) |
+
+**Einbau:** Lüfterwand am Kollektor-Austritt (Druckseite), Rückseite mit
+Staubschutz (G4-Vorfilter-Material), Sommer-/Winterklappe. Der Homelab-
+Server liefert die Lüfter gleich mit – er ist ohnehin Teil des Systems.
+
+### 6.2 Server-Abluft als Wärmequelle im Kollektor-Kreis
+
+Die Server-Abluft (35–45 °C) ist **wärmer als alles, was der Kollektor allein
+aus Sonnenlicht macht** (40–60 °C Spitze). Beide kombinieren:
+
+```
+Winter (Heizbetrieb):
+  KWL-Frischluft (−5 °C)
+    → SONNEN-LUFTKOLLEKTOR (+20 bis +40 K → 15–35 °C)
+    → SERVER-RAUM (nimmt Server-Abwärme auf → 35–45 °C)
+    → Pufferspeicher / Räume (Luft-Wasser-WT)
+
+  → Jede kWh Strom im Server wird zweimal genutzt:
+    1. als Rechenleistung
+    2. als Wärme im Luftkreis – plus Sonnen-Boost obendrauf
+
+Sommer (Kühlbetrieb):
+  Server-Abluft (35–45 °C)
+    → KOLLEKTOR (nachts verkehrt: Strahlungskühlung ans Himmelszelt,
+      tagsüber als Schornstein nach außen)
+    → Server-Raum bleibt kühl OHNE Zusatzstrom
+```
+
+**Luftweg-Regelung durch Netzfrei:** Ventile/Klappen schalten je nach
+Saison und Einstrahlung zwischen den Wegen Frischluft→Kollektor→Server→Haus
+(Winter) und Server→Kollektor→Außen (Sommer). Die Server-Lüfter (PWM) und
+der Kollektor-Ventilator werden als eine Lüftergruppe gemeinsam geregelt.
+
+### 6.3 Grenzen (ehrlich)
+
+- **Gegendruck:** Lochblech + Filter kosten Druck; Server-Lüfter sind
+  Hochdruck-Lüfter (gut geeignet), aber Volumenstrom messen (Anemometer,
+  ~15 €) und per PWM abstimmen.
+- **Staub:** Server-Lüfter im Kollektor-Kreis brauchen Vorfilter, sonst
+  Lagerschaden – G4-Material, 2×/Jahr reinigen.
+- **Luftdichtheit:** Undichte Kanäle verlieren die teuer errungene Wärme –
+  Flexrohr mit Klemmringen, nicht nur Klebeband.
+
+## 7. Integration ins Gesamtsystem
 
 | Komponente | Kopplung |
 |---|---|
@@ -87,6 +144,7 @@ Luftzug") ist mit Glasabdeckung und gedrosseltem Volumenstrom reproduzierbar.
 | Pufferspeicher (`01-…`) | Luft-Wasser-Wärmetauscher lädt den Puffer – die Quelle für den 1–3-K-Hub-Betrieb der WP (`09-…`) |
 | Wärmepumpe (`02-…`, `11-…`) | Weniger Last an kalten Sonnentagen; WP bleibt Lückenschließer |
 | Netzfrei (`03-…`) | Regelt Volumenstrom nach Einstrahlung/Puffer-Temp, schaltet Sommer-/Wintermodus, misst Ertrag |
+| **Server + Lüfter (`01-…`)** | **Server-EC-Lüfter als Kollektor-Antrieb (12 V/PWM/PV-Direkt), Server-Abluft (35–45 °C) als Wärmestufe im Luftkreis** (siehe Kap. 6) |
 | Heizfolie/Farbe (`05-…`, `07-…`) | Kollektorwärme im Puffer + Folien-Spitzen = komplette Heizkette ohne fossile Energie |
 
 **Kosten-Nutzen-Beispiel (15 m², gemäßigtes Klima):** Invest ~900 €,

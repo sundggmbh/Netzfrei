@@ -24,7 +24,9 @@ Leistungswerten und Integration: `12-sonnenluftkollektor.md`.**
 - Kopplung an die **KWL-Frischluft**: Der Luftkollektor **vorheizt die Zuluft**
   der Lüftungsanlage – im Winter kommt statt −5 °C Außenluft +15 °C ins Haus.
   Das ist die eleganteste Integration: Frischluft, Allergiker-Filter und
-  Gratis-Wärme in einem Strang.
+  Gratis-Wärme in einem Strang. Server-EC-Lüfter (12 V, PWM, aus ausrangierten
+  Servern) dienen als Kollektor-Antrieb, die Server-Abluft (35–45 °C) als
+  weitere Wärmestufe im Luftkreis – Details: `12-sonnenluftkollektor.md`, Kap. 6.
 - Alternativ als Direkt-Luftheizung für Werkstatt/Garage/Hobbyraum.
 
 **Auslegungsregel:** 1 m² Kollektor pro 5–10 m² Wohnfläche (Südwand/Dach);

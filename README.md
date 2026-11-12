@@ -48,7 +48,8 @@ autarq/
 │   └── 11-klimageraete-umbau.md ← Klimageräte als günstige WP: 5 Umbau-Pfade, Pakete
 │   ├── 12-sonnenluftkollektor.md ← Wärme aus schwarzem Lochblech (30–100 €/m²)
 │   ├── 13-produkt-sunwall.md  ← **SunWall**: Kollektor als Produkt/Marke (Markt, Spez, Roadmap)
-│   └── 14-produktion-auftragsfertigung.md ← **SunWall-Produktion**: Lohnfertigung, Standorte, Material, Fördermittel
+│   ├── 14-produktion-auftragsfertigung.md ← **SunWall-Produktion**: Lohnfertigung, Standorte, Material, Fördermittel
+│   └── 15-induktionswaerme.md ← **Induktion**: Wirbelstrom-Wärme (Realitätscheck, Abtau-/Tank-Boost-Nischen)
 └── tools/
     └── auslegung.py           ← Auslegungsrechner (Bedarf → Komponenten → Kosten)
 ```
@@ -68,6 +69,10 @@ python3 tools/auslegung.py --flaeche 100 --personen 3 --klima warm \
 # Kaltes Klima (Heizen im Fokus)
 python3 tools/auslegung.py --flaeche 140 --personen 4 --klima kalt \
     --standard saniert --server-w 600
+
+# Mit Induktions-Nischen-Boost (WP-Abtauung + Tank-Boost, 2 kW)
+python3 tools/auslegung.py --flaeche 120 --personen 4 --klima gemaessigt \
+    --standard neubau --server-w 400 --induktion-w 2000
 ```
 
 Alle Parameter: `python3 tools/auslegung.py --help`

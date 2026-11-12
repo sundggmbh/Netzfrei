@@ -82,8 +82,9 @@ def berechne(args) -> dict:
     # KWL-Wärmerückgewinnung spart ~8 % Heizwärme (kein Fensterlüftungsverlust)
     if args.kwl == "ja":
         heiz_kw_jahr *= 0.92
-    # Strahlungswärme (Folie/Farbe/IR): 2–3 K niedrigere Lufttemperatur + Zonensteuerung
-    if args.folie_m2 > 0 or args.farbe_m2 > 0:
+    # Strahlungswärme (Folie/Farbe/IR/Induktions-Panel): 2–3 K niedrigere
+    # Lufttemperatur + Zonensteuerung
+    if args.folie_m2 > 0 or args.farbe_m2 > 0 or args.induktion_w > 0:
         heiz_kw_jahr *= 0.85
     kuehl_kw_jahr = kuehllast_kw * klima.kuehl_saison * 8.0
 
@@ -109,7 +110,14 @@ def berechne(args) -> dict:
     folie_heat_kw_jahr = min(heiz_kw_jahr * 0.25, folie_leistung_kw * 800.0)
     folie_kw_jahr = folie_heat_kw_jahr
 
+    # Induktion (docs/15): Nischen-Boost (Abtauung, Tank-Boost), COP ~0,85;
+    # bewusst klein gehalten: max. 10 % des Restbedarfs, begrenzt durch
+    # Modulleistung x 800 Volllaststunden
+    induktion_leistung_kw = args.induktion_w / 1000.0
+    induktion_kw_jahr = min(heiz_kw_jahr * 0.10, induktion_leistung_kw * 800.0)
+
     wp_heiz_kw_jahr = max(0.0, heiz_kw_jahr - server_nutzbar_heiz - folie_heat_kw_jahr
+                          - induktion_kw_jahr
                           - luftkollektor_kw_jahr - kuehlgeraete_kw_jahr) / cop_heizen
     wp_ww_kw_jahr = ww_kw_jahr / cop_heizen
     wp_kuehl_kw_jahr = max(0.0, kuehl_kw_jahr) / cop_kuehlen
@@ -117,7 +125,7 @@ def berechne(args) -> dict:
     kwl_kw_jahr = 0.0 if args.kwl == "nein" else args.flaeche * 0.35 * 8760.0 / 1000.0
 
     haushalt_kw_jahr = HAUSHALT_KWH_BASIS + max(0, args.personen - 2) * HAUSHALT_KWH_PRO_PERSON
-    bedarf_kw_jahr = haushalt_kw_jahr + server_kw_jahr + wp_heiz_kw_jahr + wp_ww_kw_jahr + wp_kuehl_kw_jahr + folie_kw_jahr + kwl_kw_jahr
+    bedarf_kw_jahr = haushalt_kw_jahr + server_kw_jahr + wp_heiz_kw_jahr + wp_ww_kw_jahr + wp_kuehl_kw_jahr + folie_kw_jahr + induktion_kw_jahr + kwl_kw_jahr
 
     pv_kwp = args.pv_kwp if args.pv_kwp else round(bedarf_kw_jahr / klima.pv_ertrag, 1)
     pv_kw_jahr = pv_kwp * klima.pv_ertrag
@@ -144,6 +152,7 @@ def berechne(args) -> dict:
         + KOSTEN["smart_home"][0]
         + KOSTEN["installation_hydraulik"][0]
         + args.folie_m2 * 20.0 + (350.0 if args.folie_m2 > 0 else 0.0)
+        + induktion_leistung_kw * 200.0 + (150.0 if args.induktion_w > 0 else 0.0)
         + args.farbe_m2 * 12.0 + (250.0 if args.farbe_m2 > 0 else 0.0)
         + args.luftkollektor_m2 * 60.0
         + (300.0 if args.kuehl_abwaerme == "ja" else 0.0)
@@ -158,6 +167,7 @@ def berechne(args) -> dict:
         + KOSTEN["smart_home"][1]
         + KOSTEN["installation_hydraulik"][1]
         + args.folie_m2 * 25.0 + (500.0 if args.folie_m2 > 0 else 0.0)
+        + induktion_leistung_kw * 320.0 + (250.0 if args.induktion_w > 0 else 0.0)
         + args.farbe_m2 * 35.0 + (400.0 if args.farbe_m2 > 0 else 0.0)
         + args.luftkollektor_m2 * 200.0
         + (400.0 if args.kuehl_abwaerme == "ja" else 0.0)
@@ -169,6 +179,7 @@ def berechne(args) -> dict:
         ww_kw_jahr=ww_kw_jahr, heiz_kw_jahr=heiz_kw_jahr, kuehl_kw_jahr=kuehl_kw_jahr,
         server_kw_jahr=server_kw_jahr, server_nutzbar_heiz=server_nutzbar_heiz,
         folie_leistung_kw=folie_leistung_kw, folie_kw_jahr=folie_kw_jahr,
+        induktion_leistung_kw=induktion_leistung_kw, induktion_kw_jahr=induktion_kw_jahr,
         luftkollektor_kw_jahr=luftkollektor_kw_jahr,
         kuehlgeraete_kw_jahr=kuehlgeraete_kw_jahr,
         cop_heizen=cop_heizen, cop_kuehlen=cop_kuehlen, hub=hub,
@@ -198,6 +209,9 @@ def main() -> int:
                    help="Carbon-Heizfolie/IR-Fläche in m² (default: 0)")
     p.add_argument("--farbe-m2", type=float, default=0.0,
                    help="Carbon-Heizfarbe (Wand/Decke) in m² (default: 0)")
+    p.add_argument("--induktion-w", type=float, default=0.0,
+                   help="Induktions-Boost-Leistung in W (Abtauung/Tank-Boost, "
+                        "COP ~0,85, siehe docs/15-induktionswaerme.md; default: 0)")
     p.add_argument("--luftkollektor-m2", type=float, default=0.0,
                    help="Solar-Luftkollektor-Fläche in m² (default: 0)")
     p.add_argument("--kuehl-abwaerme", choices=["ja", "nein"], default="ja",
@@ -220,7 +234,8 @@ def main() -> int:
     print("=" * 62)
     print(f"Szenario        : {args.flaeche:.0f} m², {args.personen} Personen, "
           f"{args.standard}, Server {args.server_w:.0f} W, "
-          f"Folie {args.folie_m2:.0f} m², KWL {args.kwl}")
+          f"Folie {args.folie_m2:.0f} m², Induktion {args.induktion_w:.0f} W, "
+          f"KWL {args.kwl}")
     print(f"Klimazone       : {r['klima'].name}")
     print()
     print("-- Lasten ---------------------------------------------------")
@@ -250,6 +265,8 @@ def main() -> int:
     print(f"Folie/IR Leistung : {r['folie_leistung_kw']:8.1f} kW "
           f"({args.folie_m2:.0f} m² @ 120 W/m²)")
     print(f"Folie/IR Wärme    : {r['folie_kw_jahr']:8.0f} kWh/Jahr (direkt aus PV)")
+    print(f"Induktion (Nische): {r['induktion_kw_jahr']:8.0f} kWh/Jahr "
+          f"({args.induktion_w:.0f} W installiert, COP ~0,85)")
     print(f"Luftkollektor     : {r['luftkollektor_kw_jahr']:8.0f} kWh/Jahr "
           f"({args.luftkollektor_m2:.0f} m² @ 250 kWh/m²)")
     print(f"Kühlgeräte-Abwärme: {r['kuehlgeraete_kw_jahr']:8.0f} kWh/Jahr (Kühlschrank/TK)")

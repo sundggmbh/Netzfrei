@@ -79,3 +79,10 @@ Das System kombiniert drei Hebeleben nach Kosten-Nutzen:
 | Einsparung Heizenergie (25–35 % von ~11.300 kWh) | ~3.000–4.000 kWh/Jahr |
 | Ersparnis WP-Strom (bei COP 4) | ~750–1.000 kWh/Jahr ≈ 200–300 €/Jahr |
 | **Amortisation** | **6–10 Jahre** – oder sofort, wenn PV-Überschuss sonst ungenutzt ins Netz geht |
+
+## Ergänzung: Induktion als Hebebene 3b
+
+Neben Folie/Farbe (COP 1,0) gibt es **Induktion** (Wirbelströme, ~25–60 kHz,
+COP ~0,85): keine Grundheizung, aber einzigartige Nischen – kontaktlose
+Tank-Erwärmung ohne Heizstab, induktive WP-Abtauung, Frostschutz, Boost.
+Details und Realitätscheck: `15-induktionswaerme.md`.

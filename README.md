@@ -54,7 +54,8 @@ autarq/
 │   ├── 15-induktionswaerme.md ← **Induktion**: Wirbelstrom-Wärme (Realitätscheck, Abtau-/Tank-Boost-Nischen)
 │   ├── 16-foerdermittel-endkunden.md ← **Fördermittel**: BEG je Produkt, DIY-Falle, Förder-Check
 │   ├── 17-go-to-market.md ← **Go-to-Market**: MVP-Produkt, 4 parallele Tracks, Launch-Phasen
-│   └── 18-dezember-launch.md ← **Dezember-Launch**: Wochen-Countdown, Tor-Regeln, Review-Stand
+│   ├── 18-dezember-launch.md ← **Dezember-Launch**: Wochen-Countdown, Tor-Regeln, Review-Stand
+│   └── 19-pilot-18-wohnungen.md ← **Pilotobjekt**: 18 WE sanieren (BEG-MFH-Rechnung, Stufenplan, Agentennetzwerk)
 ├── software/
 │   └── (EMS-Code, Simulation, Tests, Home-Assistant – unverändert)
 ├── website/                 ← **SunWall-Webseite** (statisch, GitHub-Pages-fähig): Landing, Produkte, Förder-Check, FAQ

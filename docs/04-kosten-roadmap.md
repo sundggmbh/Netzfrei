@@ -59,8 +59,8 @@ je nach Region in 8–15 Jahren – in sonnenreichen Regionen schneller.
 - [ ] Netzfrei-System-Image (flashbar für Mini-PC/Homelab)
 
 ### Phase 4 – Pilotinstallationen
-- [ ] **6-WE-Pilotobjekt Zittau (Äußere Weberstr. 76) der GmbH als Pilot-/Demo-Objekt**
-      (siehe `19-pilotobjekt-zittau.md`): Pilot 2 WE → Rollout auf 4 WE,
+- [ ] **18-WE-Pilotobjekt Zittau (Äußere Weberstr. 72/74/76, 3 Häuser) der GmbH als
+      Pilot-/Demo-Objekt** (siehe `19-pilotobjekt-zittau.md`): Pilot 2 WE → Rollout in Tranchen,
       BEG-MFH-Förderung (~46 %, Antrag vor Verträgen), Netzfrei-
       Gebäude-Agentennetzwerk, Case-Study + Besichtigungen als Verkaufsargument
 - [ ] 1 Neubau gemäßigtes Klima (Referenz: Deutschland/Österreich)

@@ -235,6 +235,6 @@ Integration in die Vermarktungs-Architektur (`13-produkt-sunwall.md` Kap. 6):
 4. Optional im Auslegungsrechner (`tools/auslegung.py`): Flag `--foerderung` für eine
    grobe Zuschussschätzung (30 % / 70 % / 80 % auf Anlage + Fachmontage).
 5. Landesprogramme für die Pilotregionen (NRW, BY, TR-Markt separat) recherchieren.
-6. MFH-Fall konkret: 6-WE-Pilot Zittau der GmbH (BEG-Stufen je WE, EEE,
-   Kombinationsverbot, Weg A KfW 261 vs. Weg B BEG EM) – siehe
-   `19-pilotobjekt-zittau.md` Kap. 2.
+6. MFH-Fall konkret: 18-WE-Pilot Zittau (3 Häuser, Äußere Weberstr. 72/74/76) der
+   GmbH (BEG-Stufen je WE, EEE, Kombinationsverbot, Weg A KfW 261 vs. Weg B BEG EM)
+   – siehe `19-pilotobjekt-zittau.md` Kap. 2.

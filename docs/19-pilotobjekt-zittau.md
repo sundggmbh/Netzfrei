@@ -1,27 +1,37 @@
-# 19 – Pilotobjekt Zittau: Äußere Weberstr. 76 (6 WE) sanieren
+# 19 – Pilotobjekt Zittau: Äußere Weberstr. 72/74/76 (18 WE in 3 Häusern)
 
-Ausgangslage: Die GmbH (S & G Immobilien und Personal GmbH) saniert ihr Objekt
-**Äußere Weberstr. 76, 02763 Zittau** und nutzt die Sanierung als **Pilot-/Demo-Objekt**
-für das AUTARQ-System (SunWall, Klimageräte-Umbau, KWL, Heizfolien, Netzfrei). Damit
-wird die eigene Sanierung zum Testfeld, Messdaten-Lieferanten und stärksten
-Verkaufsargument – parallel zum Dezember-Launch (doc 18).
+Ausgangslage: Die GmbH (S & G Immobilien und Personal GmbH) saniert ihr Objekt-Ensemble
+**Äußere Weberstr. 72, 74 und 76, 02763 Zittau** und nutzt die Sanierung als
+**Pilot-/Demo-Objekt** für das AUTARQ-System (SunWall, Klimageräte-Umbau, KWL,
+Heizfolien, Netzfrei). Damit wird die eigene Sanierung zum Testfeld,
+Messdaten-Lieferanten und stärksten Verkaufsargument – parallel zum
+Dezember-Launch (doc 18).
 
-## 0. Objektdaten (Quelle: Investoren-Exposé + Gesamtkonzept v2, Google Drive)
+## 0. Objektdaten
 
 | Parameter | Wert | Quelle |
 |---|---|---|
-| Adresse | Äußere Weberstr. 76, 02763 Zittau (Sachsen) | OP-Liste Stadt Zittau |
-| Gebäudetyp | Sechsfamilienhaus, **6 WE** à 50–55 m², ca. 312 m² Gesamtfläche | Gesamtkonzept v2 |
+| Adresse | Äußere Weberstr. **72 / 74 / 76**, 02763 Zittau (Sachsen) | OP-Liste Stadt Zittau + Eigentümer-Angabe |
+| Ensemble | **3 Sechsfamilienhäuser = 18 WE**, je Haus 6 WE à 50–55 m² | Eigentümer-Angabe + Exposé (je Haus) |
+| Grundstück | **ca. 2.400 m²**, gegenüber McDonald's & Kaufland | Eigentümer-Angabe |
+| Lage | Direkt an der **B96** (Bundesstraße, hohe Sichtbarkeit) | Eigentümer-Angabe |
 | Baujahr | **1910** (Altbau, Kernsanierung geplant) | Gesamtkonzept v2 |
+| Gesamtfläche | ca. 312 m² je Haus (≈ 936 m² Ensemble) | Gesamtkonzept v2 (je Haus) |
 | Geplante Nutzung | „Betreutes Wohnen", barrierefrei (DIN 18040-2), Außen-Aufzug im Anbau | Gesamtkonzept v2 / LoI |
 | Betreiber | Lokaler Pflegedienst, Generalmietvertrag 10 Jahre (+5 Jahre Option) angestrebt | Exposé / LoI |
-| Finanzierungsrahmen | Kernsanierung ~780.000 € brutto, KfW-Zuschuss 351.000 € (45 %), eff. 549.000 € | Gesamtkonzept v2 |
-| Investorenstruktur | 6 Anteile à 50.000 €, KfW 261, Tokenisierung als Exit | Exposé |
+| Finanzierungsrahmen | Kernsanierung ~780.000 € je Haus, KfW-Zuschuss 45 %, eff. 549.000 € je Haus | Gesamtkonzept v2 |
+| Investorenstruktur | Je Haus 6 Anteile à 50.000 € (Exposé-Struktur × 3 = 900.000 € Altbestand) | Exposé |
 
 **Standort-Kontext Zittau (Ostsachsen, Oberlausitz):** eines der kältesten
 Klimagebiete Deutschlands → hohe Heizlast, aber genau deshalb das glaubwürdigste
 Demo-Objekt für „Heizen mit AUTARQ im kalten Klima" (doc 01-Klimazonen). Denkmalschutz
 ist in Zittau (historischer Stadtkern) realistisch zu prüfen – in M1 klären.
+
+**B96-Lage = eingebautes Schaufenster:** Tausende Passanten/Pendler täglich sehen die
+Süd-Fassade → **SunWall als sichtbare Demo-Wand** mit Hinweistafel („Heizt diese Wand
+mit Sonne – Ertrag live auf autarq.eu") verwandelt die Lage in Dauerwerbung. Zusätzlich
+macht die B96 den KWL-Filter-Luftpfad (doc 06: Pollen, Feinstaub, Allergiker) zum
+harten Verkaufsargument – Straßenlage = Luftqualität ist ein echtes Thema.
 
 **Offene Punkte aus den Unterlagen:** Im Exposé/Gesamtkonzept stehen Platzhalter
 (`[Name Ihrer GmbH]`, `[Name des Pflegedienstes]`, `[Adresse des Hauses in Zittau]`).
@@ -29,23 +39,27 @@ Foto `20260127_165301.jpg` (Ordner „Grundsteuer Zittau") noch auszuwerten.
 
 ---
 
-## 1. Warum das Objekt ideal ist
+## 1. Warum das Ensemble ideal ist
 
-1. **Echtes MFH mit Förderstufen:** BEG fördert je Wohneinheit gestaffelt (Kap. 2) –
-   6 WE sind ein solider Fördertopf bei überschaubarem Risiko.
-2. **Echtes Testfeld mit Stufen:** 2 Pilot-WE → Auswertung → Rollout auf 4 WE.
-   Fehler kosten 2 WE, nicht 6.
-3. **Referenzobjekt im Kälte-Test:** Messdaten aus 6 realen Wohnungen in einer der
+1. **Großer MFH-Fördertopf:** BEG fördert je Wohneinheit gestaffelt (Kap. 2) –
+   18 WE ergeben ~199.000 € förderfähige Kosten im Einzelmaßnahmen-Weg.
+2. **Echtes Testfeld mit Stufen:** 2 Pilot-WE → Auswertung → Rollout in Tranchen.
+   Fehler kosten 2 WE, nicht 18.
+3. **Drei identische Häuser = A/B-Test:** 72/74/76 sind baugleich → ein Haus als
+   AUTARQ-Pilot, Vergleich gegen unrenovierten Bestand; oder drei Ausbaustufen
+   (nur P1 / P1+P3 / voll) → saubere Messdaten je Paket.
+4. **Referenzobjekt im Kälte-Test:** Messdaten aus 18 realen Wohnungen in einer der
    kältesten Regionen Deutschlands sind das stärkste Verkaufsargument –
-   „bei uns in Zittau läuft es, hier sind die Zahlen".
-4. **Netzfrei-Skalierungstest:** 6 WE mit Gebäudesystem ist genau der Fall, für den
-   das KI-Agentennetzwerk gebaut wird (Kap. 5) – kleiner als 18 WE, aber voll
-   funktional (Lastmanagement, Prognose, Doku).
-5. **GmbH als Eigentümer + Betreiber-Konzept:** Ein Antragsteller, ein
+   „bei uns in Zittau an der B96 läuft es, hier sind die Zahlen".
+5. **Netzfrei-Skalierungstest:** 18 WE mit Gebäudesystem ist genau der Fall, für den
+   das KI-Agentennetzwerk gebaut wird (Kap. 5) – Lastmanagement über 90 kW-Spitze
+   ist die echte Produkt-Demonstration.
+6. **GmbH als Eigentümer + Betreiber-Konzept:** Ein Antragsteller, ein
    Ansprechpartner; der Pflegedienst-Generalvertrag (Exposé) senkt das
    Leerstandsrisiko und wertet die Case-Study auf.
-6. **Investoren-Paket vorhanden:** Exposé + Gesamtkonzept + LoI existieren bereits –
-   das AUTARQ-Sanierungskonzept wird darin als Mehrwert sichtbar (Kap. 7).
+7. **Investoren-Paket vorhanden:** Exposé + Gesamtkonzept + LoI existieren bereits –
+   die Exposé-Struktur (6 Anteile à 50.000 €) ist pro Haus denkbar und auf alle
+   drei Häuser skalierbar (Kap. 7).
 
 ---
 
@@ -61,15 +75,17 @@ Energie-Effizienz-Experte (EEE) muss vor Antragstellung durchrechnen:
 |---|---|---|
 | Umfang | Kernsanierung zum Effizienzhaus (2.500 €/m²-Ansatz im Exposé) | Nur Wärme/KWL/Steuerung je WE (P1–P6) |
 | Förderung | Tilgungszuschuss ~45 % auf Sanierungsdarlehen (WPB-Bonus laut Gesamtkonzept; Stand tagesaktuell prüfen) | 30 % Grund + bis 16 % Klimageschwindigkeitsbonus = **46 %** im besten Fall |
-| Förderfähige Kosten (BEG-Stufen) | voller Sanierungsumfang | **1. WE 28.000 € + 5 × 15.000 € = 103.000 €** |
-| Realistische Fördersumme (Weg B) | – | **46 % von 103.000 € ≈ 47.400 €** |
+| Förderfähige Kosten (BEG-Stufen, 18 WE) | voller Sanierungsumfang | **1. WE 28.000 € + 5 × 15.000 € + 12 × 8.000 € = 199.000 €** |
+| Realistische Fördersumme (Weg B) | – | **46 % von 199.000 € ≈ 91.500 €** |
 | AUTARQ-Integration | WP/Warmwasser als Teil der EH-Planung → **R290-Geräte + Klimageräte-Umbau (doc 11) in der EH-Planung vorsehen** | AUTARQ-Pakete sind selbst die Maßnahme |
 | Aufwand/Risiko | hoch (Kernsanierung, 12–18 Monate) | gering (je WE 1–2 Tage + KWL) |
 
 **Empfehlung:** Mit dem EEE beide Wege rechnen. Falls Weg A (Exposé-Kurs) gefahren
 wird, gehört das AUTARQ-System **in die EH-Planung hinein** (R290-WP, KWL, SunWall
 als nicht-förderfähiger Zusatz, Netzfrei-Steuerung) – nicht daneben. Falls Weg B:
-Antrag **vor Vorhabenbeginn** (vor jedem Vertrag!), ggf. gestaffelt je Baublock.
+Antrag **vor Vorhabenbeginn** (vor jedem Vertrag!), ggf. gestaffelt je Haus/Baublock
+(72 → 74 → 76). Die BEG-Stufen (28k/15k/8k je WE) gelten pro Antrag – die Reihenfolge
+der Häuser mit dem EEE optimieren.
 
 Weitere Weg-B-Punkte:
 
@@ -85,8 +101,8 @@ Weitere Weg-B-Punkte:
 ## 3. Mieter & Recht (Betreutes Wohnen)
 
 - **Generalmietvertrag-Pflegedienst (Exposé/LoI):** Nur EIN Mieter-Verhandlungspartner
-  für alle 6 WE – Modernisierungsankündigung und Zutritt sind deutlich einfacher als
-  bei 6 Einzelmietautomaten. Sanierungszeiträume im LoI/Vertrag mitplanen
+  für alle 18 WE – Modernisierungsankündigung und Zutritt sind deutlich einfacher als
+  bei 18 Einzelmietautomaten. Sanierungszeiträume im LoI/Vertrag mitplanen
   (Übergabe „voraussichtlich [Monat/Jahr]" ist dort noch offen).
 - **Seniorengerechtigkeit:** DIN 18040-2 (LoI § 3) – Netzfrei-Komfort-Bänder und
   Bedienung (Licht, Temperatur) müssen ohne Lernkurve funktionieren; das ist ein
@@ -109,35 +125,40 @@ Weitere Weg-B-Punkte:
 | **P5** | Heizfolie/-farbe als Ergänzung (Bad, kalte Ecke) | 100–400 € | nein | `05`/`07` |
 | **P6** | Netzfrei-Knoten (Messung + EMS, Hausbus) | 150–300 € | teils (smarte Technik) | `software/` |
 
-**Gebäudeebene (einmalig):** PV-Anlage (Dach) + Batterie + SunWall-Wand an der
-Südfassade + zentrale Netzfrei-Zentrale. PV/Batterie über KfW 270 (Kredit) bzw.
-EEG (Eigenverbrauch) wirtschaften, nicht über BEG.
+**Gebäudeebene (einmalig):** PV-Anlage (Dach, ~2.400 m² Grundstück + 3 Dächer) +
+Batterie + SunWall-Wand an der Süd-Fassade (B96-Sichtseite!) + zentrale
+Netzfrei-Zentrale. PV/Batterie über KfW 270 (Kredit) bzw. EEG (Eigenverbrauch)
+wirtschaften, nicht über BEG.
 
 **Beispielrechnung Pilot-WE (P1 + P3 + P6):** ~1.300–2.550 € Investition, davon
 ~46 % auf P1 gefördert → Netto ~1.000–1.900 € je WE. Erst messen, dann Rollout.
 
 ---
 
-## 5. KI-Agentennetzwerk (Netzfrei) im Gebäude
+## 5. KI-Agentennetzwerk (Netzfrei) im Ensemble
 
-Die 6 WE sind der Skalierungstest für die Netzfrei-Architektur
+Die 18 WE in 3 Häusern sind der Skalierungstest für die Netzfrei-Architektur
 (`software/README.md`, `software/netzfrei/ems.py`). Rollenbild:
 
 | Agent | Aufgabe | Basis heute |
 |---|---|---|
-| **WE-EMS-Agent** (×6) | Je Wohnung: Überschuss-Nutzung, Komfort-Band, Temperatur-Soll | `ems.py` `entscheide()` – bereits getestet |
-| **Gebäude-Agent** | Lastmanagement: 6 × 5 kW WP = 30 kW Spitze → Staffelbetrieb, Priorisierung, Netzanschluss-Grenze einhalten | neu (Phase 2) |
+| **WE-EMS-Agent** (×18) | Je Wohnung: Überschuss-Nutzung, Komfort-Band, Temperatur-Soll | `ems.py` `entscheide()` – bereits getestet |
+| **Haus-Agent** (×3) | Je Gebäude: Staffelbetrieb, Priorisierung, Netzanschluss-Grenze einhalten | neu (Phase 2) |
+| **Ensemble-Agent** | Übergreifend: 18 × 5 kW WP = 90 kW Spitze → Lastverteilung über 3 Häuser, PV-/SunWall-Überschüsse dorthin schieben, wo gerade Bedarf ist | neu (Phase 2/3) |
 | **PV-/Prognose-Agent** | Erzeugungs- und Wetterprognose (SunWall + PV), Preisfenster | Simulation-Logik vorhanden |
 | **Mess-/Doku-Agent** | Messdaten sammeln, QC-Protokolle, Fördernachweise, Case-Study-Daten | neu (Phase 2) |
 | **Wartungs-Agent** | Filterstände, Ventilator-Laufzeit, Fehlercodes → Wartungsplan | neu (Phase 3) |
 
-**Wichtige Ingenieur-Aufgabe zuerst:** Netzanschluss prüfen. 30 kW WP-Spitze
-gleichzeitig ist durch Staffelbetrieb (Gebäude-Agent), Sonnen-/Kollektor-Vorheizung
-(SunWall senkt WP-Laufzeit) und Warmwasser-Zeitfenster zu vermeiden. Das ist genau
-die Demonstration, die Netzfrei als Produkt beweisen muss.
+**Wichtige Ingenieur-Aufgabe zuerst:** Netzanschluss je Haus prüfen. 90 kW WP-Spitze
+gleichzeitig ist durch Staffelbetrieb (Haus-/Ensemble-Agent), Sonnen-/Kollektor-
+Vorheizung (SunWall senkt WP-Laufzeit) und Warmwasser-Zeitfenster zu vermeiden.
+Das ist genau die Demonstration, die Netzfrei als Produkt beweisen muss – und die
+3-Häuser-Struktur (3 Anschlüsse, ein Ensemble) ist der ideale Testfall für
+gebäudeübergreifendes Lastmanagement.
 
 **Stufen:** Phase 1 = regelbasiert (heutiger Code, 2 Pilot-WE) → Phase 2 =
-Gebäude-Agent + Mess-Agent (Rollout auf 4 WE) → Phase 3 = MPC/Prognose (alle 6 WE).
+Haus-Agent + Mess-Agent (Rollout in Tranchen) → Phase 3 = Ensemble-Agent +
+MPC/Prognose (alle 18 WE).
 
 ---
 
@@ -145,28 +166,31 @@ Gebäude-Agent + Mess-Agent (Rollout auf 4 WE) → Phase 3 = MPC/Prognose (alle 
 
 | Monat | Schritt |
 |---|---|
-| **M1** | Bestandsaufnahme: Heizlast je WE, Netzanschluss, Dach/Süd-Fassadenfläche, **Denkmalschutz Zittau klären**, EEE beauftragen; Foto „Grundsteuer Zittau" auswerten |
-| **M1–M2** | EEE-Rechnung Weg A vs. Weg B (Kap. 2); BEG-Antrag(en) stellen (VOR Verträgen!); KfW-261/458-Konditionen tagesaktuell prüfen |
-| **M2–M3** | **Pilot: 2 WE** komplett (P1+P3+P5+P6), SunWall-Fassade 1. Abschnitt, Messaufbau |
+| **M1** | Bestandsaufnahme alle 3 Häuser: Heizlast je WE, 3× Netzanschluss, Dach/Süd-Fassadenflächen, **Denkmalschutz Zittau klären**, EEE beauftragen; Foto „Grundsteuer Zittau" auswerten |
+| **M1–M2** | EEE-Rechnung Weg A vs. Weg B (Kap. 2); BEG-Antrag(en) stellen (VOR Verträgen!, Reihenfolge der Häuser optimieren); KfW-261/458-Konditionen tagesaktuell prüfen |
+| **M2–M3** | **Pilot: 2 WE** komplett (P1+P3+P5+P6), SunWall-Fassade 1. Abschnitt an der B96-Sichtseite (mit Hinweistafel), Messaufbau |
 | **M4** | Auswertung Pilot: Ertrag, ΔT, Komfort, Betreiber-Feedback, Kosten real vs. Plan |
-| **M5–M9** | Rollout auf 4 WE, Gebäudesystem live, Lastmanagement in Betrieb; Abstimmung mit Pflegedienst-LoI |
-| **M10–M12** | KWL-Pilot auswerten, Case-Study schreiben, Messdaten veröffentlichen (Track D, doc 18) |
-| **ab M12** | **Demo-Objekt in Vermarktung:** Besichtigungen für Investoren/Interessenten & Partner, Messdaten-Widget auf der Webseite, Video-Tour; Exposé-Platzhalter final füllen |
+| **M5–M9** | Rollout in Tranchen (je Haus 72 → 74 → 76), Haus-Agents live, Lastmanagement in Betrieb; Abstimmung mit Pflegedienst-LoI |
+| **M10–M12** | KWL-Pilot auswerten, Ensemble-Agent + Prognose scharf schalten, Case-Study schreiben, Messdaten veröffentlichen (Track D, doc 18) |
+| **ab M12** | **Demo-Objekt in Vermarktung:** Besichtigungen für Investoren/Interessenten & Partner, Messdaten-Widget auf der Webseite, Video-Tour, B96-Schaufenster-Wand als Dauerwerbung; Exposé-Platzhalter final füllen |
 
 ---
 
 ## 7. Demo-Objekt als Verkaufsargument (Verwertung)
 
-1. **Case-Study-Seite** auf der Webseite: „6 Wohnungen in Zittau, echte Zahlen" –
-   Ertrag, Einsparung, Förderquote, Zufriedenheit; Kälte-Region als Härtetest-Story.
-2. **Besichtigungstermine** für Wartelisten-Kunden und SHK-Partner (Vertrauen vor Kauf).
-3. **Messdaten open:** wie die Bauanleitung – Transparenz als USP (doc 13 Kap. 6).
-4. **Referenz für B2B:** Wohnungsbaugesellschaften, Pflegebetreiber, Gewerbe (SW-Pro),
+1. **Case-Study-Seite** auf der Webseite: „18 Wohnungen in Zittau, echte Zahlen" –
+   Ertrag, Einsparung, Förderquote, Zufriedenheit; Kälte-Region + B96-Luftpfad als
+   Härtetest-Story.
+2. **B96-Schaufenster:** beschilderte SunWall-Demo-Fassade mit Live-Ertragsanzeige –
+   kostenlose Dauerwerbung an einer Bundesstraße mit hohem Verkehrsaufkommen.
+3. **Besichtigungstermine** für Wartelisten-Kunden und SHK-Partner (Vertrauen vor Kauf).
+4. **Messdaten open:** wie die Bauanleitung – Transparenz als USP (doc 13 Kap. 6).
+5. **Referenz für B2B:** Wohnungsbaugesellschaften, Pflegebetreiber, Gewerbe (SW-Pro),
    Agrar – „Referenzobjekt saniert" öffnet genau diese Türen.
-5. **Investoren-Mehrwert:** Das AUTARQ-Sanierungskonzept (Kap. 2/4) als Anhang ins
+6. **Investoren-Mehrwert:** Das AUTARQ-Sanierungskonzept (Kap. 2/4) als Anhang ins
    bestehende Investoren-Exposé – senkt laufende Kosten der Pflegeimmobilie und
-   stützt den Ertragswert (695.304 € laut Gesamtkonzept).
-6. **Förder-Dokumentation als Vorlage:** Der komplette Antrags- und Nachweis-Weg wird
+   stützt den Ertragswert (695.304 € je Haus laut Gesamtkonzept, × 3 Häuser).
+7. **Förder-Dokumentation als Vorlage:** Der komplette Antrags- und Nachweis-Weg wird
    dokumentiert und wird Muster für den Förder-Check-Service (doc 16 Kap. 6).
 
 ---
@@ -179,12 +203,14 @@ Gebäude-Agent + Mess-Agent (Rollout auf 4 WE) → Phase 3 = MPC/Prognose (alle 
 - **BEG-Treppe:** Klimageschwindigkeitsbonus sinkt (16 % → 0 % bis Aug 2028) –
   Antrag so früh wie möglich; Businessplan mit 30 % Grundförderung kalkulieren
   (Bonus = Upside, nicht Planbasis).
-- **Denkmalschutz / Fassade (Zittau-Altstadt):** SunWall + Außengeräte brauchen ggf.
-  Genehmigung – in M1 klären, bevor SunWall-Fassade geplant wird.
+- **Denkmalschutz / Fassade (Zittau-Altstadtnähe):** SunWall + Außengeräte brauchen
+  ggf. Genehmigung – in M1 klären, bevor die B96-Schaufenster-Wand geplant wird.
 - **Baujahr 1910:** unbekannte Dämmung/Luftdichtheit → Heizlast-Messung in M1;
   KWL-Ziele erst nach Blower-Door realistisch setzen.
-- **Kapazität:** Sanierung parallel zum Lohnfertigungs-Start (doc 18) kollidiert –
-  deshalb Tranchen (M5–M9), Pilot zuerst.
+- **B96-Lärm:** KWL-Ansaugung und Außengeräte schallgedämmt und von der Straße weg
+  positionieren; Filterstufe wegen Straßenstaub großzügiger auslegen (doc 06).
+- **Kapazität:** 18-WE-Sanierung parallel zum Lohnfertigungs-Start (doc 18) kollidiert
+  – deshalb Tranchen (M5–M9), Pilot zuerst.
 - **Kostenrealität:** Grob-Kosten hier sind Planwerte; nach Pilot-WE (M4) neu
   kalkulieren, bevor der Rollout freigegeben wird.
 
@@ -193,11 +219,13 @@ Gebäude-Agent + Mess-Agent (Rollout auf 4 WE) → Phase 3 = MPC/Prognose (alle 
 ## 9. Nächste Schritte
 
 1. Foto `20260127_165301.jpg` (Drive-Ordner „Grundsteuer Zittau") auswerten; fehlende
-   Gebäudedaten ergänzen (Dach-/Süd-Fassadenfläche, Netzanschluss, heutige Heizung).
-2. EEE beauftragen: Weg A (KfW 261) vs. Weg B (BEG EM) für 6 WE durchrechnen
-   (Kombinationsverbot!, Kap. 2).
-3. Pilot-WE auswählen (Süd-Fassade, zuerst umbaubar).
-4. Netzanschluss-Potenzial beim Netzbetreiber anfragen (30-kW-Frage, Kap. 5).
+   Gebäudedaten ergänzen (3× Dach-/Süd-Fassadenfläche, 3× Netzanschluss, heutige
+   Heizung je Haus, Flurstück/Kataster für das 2.400-m²-Grundstück).
+2. EEE beauftragen: Weg A (KfW 261) vs. Weg B (BEG EM) für 18 WE in 3 Häusern
+   durchrechnen (Kombinationsverbot!, Reihenfolge der Häuser optimieren).
+3. Pilot-WE auswählen (Süd-Fassade zur B96, zuerst umbaubar).
+4. Netzanschluss-Potenzial beim Netzbetreiber für alle 3 Häuser anfragen
+   (90-kW-Frage, Kap. 5).
 5. Offene Posten Stadt Zittau (Abwasser, Äußere Weberstr. 76) vor dem
    Investorenan schreiben bereinigen.
 6. Sanierungs- und Launch-Kalender zusammenführen (doc 18): Prototyp-/Charge-1-

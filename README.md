@@ -55,7 +55,7 @@ autarq/
 │   ├── 16-foerdermittel-endkunden.md ← **Fördermittel**: BEG je Produkt, DIY-Falle, Förder-Check
 │   ├── 17-go-to-market.md ← **Go-to-Market**: MVP-Produkt, 4 parallele Tracks, Launch-Phasen
 │   ├── 18-dezember-launch.md ← **Dezember-Launch**: Wochen-Countdown, Tor-Regeln, Review-Stand
-│   └── 19-pilotobjekt-zittau.md ← **Pilotobjekt Zittau**: Äußere Weberstr. 76, 6 WE sanieren (2 Förderwege, Stufenplan, Agentennetzwerk)
+│   └── 19-pilotobjekt-zittau.md ← **Pilotobjekt Zittau**: Äußere Weberstr. 72/74/76, 18 WE in 3 Häusern sanieren (2 Förderwege, Stufenplan, Agentennetzwerk, B96-Schaufenster)
 ├── software/
 │   └── (EMS-Code, Simulation, Tests, Home-Assistant – unverändert)
 ├── website/                 ← **SunWall-Webseite** (statisch, GitHub-Pages-fähig): Landing, Produkte, Förder-Check, FAQ

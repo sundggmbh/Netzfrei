@@ -133,10 +133,12 @@ def berechne(args) -> dict:
     )
     wp_leistung_kw = round(wp_leistung_kw, 1)
 
+    wp_kosten = KOSTEN["waermepumpe"] if args.wp_quelle == "prototyp" else (600.0, 1200.0)
+
     kosten_diy = (
         pv_kwp * KOSTEN["pv_pro_kwp"][0]
         + batterie_kwh * KOSTEN["batterie_pro_kwh"][0]
-        + KOSTEN["waermepumpe"][0]
+        + wp_kosten[0]
         + puffer_l * KOSTEN["puffer_pro_l"][0]
         + KOSTEN["server_ems"][0]
         + KOSTEN["smart_home"][0]
@@ -150,7 +152,7 @@ def berechne(args) -> dict:
     kosten_serie = (
         pv_kwp * KOSTEN["pv_pro_kwp"][1]
         + batterie_kwh * KOSTEN["batterie_pro_kwh"][1]
-        + KOSTEN["waermepumpe"][1]
+        + wp_kosten[1]
         + puffer_l * KOSTEN["puffer_pro_l"][1]
         + KOSTEN["server_ems"][1]
         + KOSTEN["smart_home"][1]
@@ -170,6 +172,7 @@ def berechne(args) -> dict:
         luftkollektor_kw_jahr=luftkollektor_kw_jahr,
         kuehlgeraete_kw_jahr=kuehlgeraete_kw_jahr,
         cop_heizen=cop_heizen, cop_kuehlen=cop_kuehlen, hub=hub,
+        wp_quelle=args.wp_quelle,
         kwl_kw_jahr=kwl_kw_jahr,
         wp_heiz_kw_jahr=wp_heiz_kw_jahr, wp_ww_kw_jahr=wp_ww_kw_jahr,
         wp_kuehl_kw_jahr=wp_kuehl_kw_jahr, haushalt_kw_jahr=haushalt_kw_jahr,
@@ -204,6 +207,10 @@ def main() -> int:
     p.add_argument("--hub-k", type=float, default=None,
                    help="Temperaturhub der WP in K (default: 35 = konventionell; "
                         "z. B. 3 für Low-Lift-Betrieb mit warmem Puffer als Quelle)")
+    p.add_argument("--wp-quelle", choices=["prototyp", "klimageraet"], default="prototyp",
+                   help="Wärmepumpen-Basis: 'prototyp' (kompakte WP, 4.000–5.000 €) "
+                        "oder 'klimageraet' (Split-Umbau Luft→Wasser, 600–1.200 €, "
+                        "siehe docs/11-klimageraete-umbau.md)")
     args = p.parse_args()
 
     r = berechne(args)
@@ -234,6 +241,7 @@ def main() -> int:
     print(f"Nennleistung      : {r['wp_leistung_kw']:5.1f} kW modulierend 1–10 kW")
     print(f"Temperaturhub     : {r['hub']:5.1f} K → COP {r['cop_heizen']} (Heizen) / "
           f"{r['cop_kuehlen']} (Kühlen)")
+    print(f"WP-Basis          : {'Klimagerät-Umbau (Split→Wasser)' if r['wp_quelle'] == 'klimageraet' else 'Kompakt-Prototyp (Therme-Format)'}")
     print(f"Heizstrombedarf   : {r['wp_heiz_kw_jahr']:8.0f} kWh/Jahr (COP {r['cop_heizen']})")
     print(f"Warmwasser-Strom  : {r['wp_ww_kw_jahr']:8.0f} kWh/Jahr")
     print(f"Kühlstrombedarf   : {r['wp_kuehl_kw_jahr']:8.0f} kWh/Jahr (SEER {r['cop_kuehlen']})")

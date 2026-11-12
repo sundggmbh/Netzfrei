@@ -12,6 +12,8 @@ Ländern, und Abwärmenutzung von Servern, Computern, Kühlschränken und Tiefk�
    (ca. 450 × 600 × 300 mm), wandmontierbar oder liegend aufstellbar. Heizen *und* Kühlen.
    Mit **R290 (Propan)** und minimalem Temperaturhub (1–3 K über warmen Puffer +
    große Strahlungsflächen) erreicht sie **COP 8–15** statt üblicher 3–4.
+   **Oder noch billiger:** Ein 300–800-€-Split-Klimagerät ist technisch dieselbe
+   Wärmepumpe – Umbau-Pfade zu Warmwasser, Wasser, Abluft und PV-Direkt: `11-…`.
 3. **Netzfrei – das lokale KI-Heimnetzwerk.** Eine Instanz pro Gebäude, ohne Cloud:
    sie entscheidet, wann Strom verbraucht, gespeichert, verkauft oder verschoben wird –
    abhängig von PV-Ertrag, dynamischen Strompreisen (nachts oft günstig, abends teuer),
@@ -41,7 +43,8 @@ autarq/
 │   ├── 07-heizfarben.md       ← Heizen durch Streichen (Carbon-Heizfarbe)
 │   ├── 08-waermequellen.md    ← Solar-Luftkollektoren, Kühlgeräte-Abwärme, Abluft
 │   ├── 09-kaeltemittel-niedertemperaturhub.md ← R290 & 1–3 K-Hub-Betrieb (COP 8–15)
-│   └── 10-smart-home-systeme.md ← Systemvergleich & Einkaufsliste für Netzfrei
+│   ├── 10-smart-home-systeme.md ← Systemvergleich & Einkaufsliste für Netzfrei
+│   └── 11-klimageraete-umbau.md ← Klimageräte als günstige WP: 5 Umbau-Pfade, Pakete
 └── tools/
     └── auslegung.py           ← Auslegungsrechner (Bedarf → Komponenten → Kosten)
 ```

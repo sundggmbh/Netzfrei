@@ -51,7 +51,8 @@ autarq/
 │   ├── 12-sonnenluftkollektor.md ← Wärme aus schwarzem Lochblech (30–100 €/m²)
 │   ├── 13-produkt-sunwall.md  ← **SunWall**: Kollektor als Produkt/Marke (Markt, Spez, Roadmap)
 │   ├── 14-produktion-auftragsfertigung.md ← **SunWall-Produktion**: Lohnfertigung, Standorte, Material, Fördermittel
-│   └── 15-induktionswaerme.md ← **Induktion**: Wirbelstrom-Wärme (Realitätscheck, Abtau-/Tank-Boost-Nischen)
+│   ├── 15-induktionswaerme.md ← **Induktion**: Wirbelstrom-Wärme (Realitätscheck, Abtau-/Tank-Boost-Nischen)
+│   └── 16-foerdermittel-endkunden.md ← **Fördermittel**: BEG je Produkt, DIY-Falle, Förder-Check
 ├── software/
 │   ├── README.md              ← **Netzfrei-Software**: Architektur, EMS-Regeln, Setup
 │   ├── netzfrei/ems.py        ← EMS-Kernregelung v1 (regelbasiert, getestet)

@@ -70,6 +70,9 @@ je nach Region in 8–15 Jahren – in sonnenreichen Regionen schneller.
 - [ ] **Auftragsfertigung aufbauen** (siehe `14-produktion-auftragsfertigung.md`):
       RFQ an Blechzentren DE/PL/TR, Ventilator-Direktimport, Fördermittel-Anträge
       (StartGeld, Forschungszulage für Prüfstand, ZIM), Marken-Anmeldung DPMA/EUIPO
+- [ ] **Förder-Check als Verkaufs-Feature** (siehe `16-foerdermittel-endkunden.md`):
+      Partner-Installateurnetz, Zwei-Linien-Modell (DIY ohne / Pro mit Förderung),
+      Förder-Check-Formular für BEG (bis 70–80 % Heizungsförderung)
 - [ ] Open-Hardware-Dokumentation (Bauanleitungen, Stücklisten)
 - [ ] Partner für Serienfertigung der kompakten WP
 - [ ] Anleitung für Selbstbauer in allen Klimazonen

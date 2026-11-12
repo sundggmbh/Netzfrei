@@ -107,6 +107,9 @@ aktuelle Studien 2024/2025) kennt die Optimalparameter:
   Bausatz-Montage), ab ~500 Modulen/Jahr eigene Fertigung wirtschaftlich –
   Details, Standorte, Materialpreise und Fördermittel: siehe
   `14-produktion-auftragsfertigung.md`.
+- **Fördermittel & Förder-Check:** Förderfähigkeit je Produkt, DIY-Falle
+  (Fachbetriebs-Pflicht) und der geplante „Förder-Check“ als Verkaufs-Feature:
+  siehe `16-foerdermittel-endkunden.md`.
 
 ## 7. Roadmap zum Produkt
 

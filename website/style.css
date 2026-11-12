@@ -1,0 +1,144 @@
+/* SunWall – Einfach, kostengünstig, unabhängig. Statisch, ohne Framework. */
+:root {
+  --schwarz: #14161a;
+  --anthrazit: #23262c;
+  --sonne: #f5a623;
+  --sonne-dunkel: #d98c0a;
+  --hintergrund: #f7f6f3;
+  --karte: #ffffff;
+  --text: #22252a;
+  --grau: #6b7078;
+  --gruen: #2e7d4f;
+  --rot: #b3402e;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--text);
+  background: var(--hintergrund);
+  line-height: 1.6;
+}
+a { color: var(--sonne-dunkel); }
+h1, h2, h3 { line-height: 1.25; }
+
+/* Kopf */
+.kopf {
+  background: var(--schwarz);
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.marke { font-size: 1.25rem; font-weight: 700; color: #fff; text-decoration: none; }
+.marke span { color: var(--sonne); }
+nav a { color: #dfe2e6; text-decoration: none; margin-left: 1rem; font-size: 0.95rem; }
+nav a:hover { color: var(--sonne); }
+
+/* Hero */
+.hero {
+  background: linear-gradient(160deg, var(--schwarz) 0%, var(--anthrazit) 70%);
+  color: #fff;
+  padding: 4rem 1.2rem 3.5rem;
+  text-align: center;
+}
+.hero h1 { font-size: clamp(1.8rem, 4.5vw, 3rem); max-width: 60rem; margin: 0 auto 0.8rem; }
+.hero h1 em { color: var(--sonne); font-style: normal; }
+.hero p.untertitel { max-width: 46rem; margin: 0 auto 1.6rem; color: #c9cdd3; font-size: 1.1rem; }
+.motto {
+  display: inline-block;
+  border: 1px solid var(--sonne);
+  color: var(--sonne);
+  border-radius: 999px;
+  padding: 0.35rem 1.1rem;
+  font-size: 0.95rem;
+  margin-bottom: 1.6rem;
+}
+.aktion { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
+.button {
+  display: inline-block;
+  background: var(--sonne);
+  color: var(--schwarz);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.75rem 1.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--sonne);
+}
+.button:hover { background: var(--sonne-dunkel); border-color: var(--sonne-dunkel); }
+.button.ghost { background: transparent; color: #fff; border-color: #5a5f66; }
+.button.ghost:hover { border-color: var(--sonne); color: var(--sonne); }
+
+/* Layoutbausteine */
+main { max-width: 64rem; margin: 0 auto; padding: 1.5rem 1.2rem 3rem; }
+section { margin: 2.5rem 0; }
+.kacheln { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; }
+.karte {
+  background: var(--karte);
+  border: 1px solid #e4e2dc;
+  border-radius: 10px;
+  padding: 1.2rem 1.3rem;
+}
+.karte h3 { margin-bottom: 0.4rem; }
+.karte .zahl { font-size: 1.7rem; font-weight: 800; color: var(--sonne-dunkel); }
+.karte p { color: var(--grau); font-size: 0.95rem; }
+.tabelle { width: 100%; border-collapse: collapse; background: var(--karte); border-radius: 10px; overflow: hidden; }
+.tabelle th, .tabelle td { padding: 0.65rem 0.8rem; border-bottom: 1px solid #e8e6e0; text-align: left; font-size: 0.95rem; }
+.tabelle th { background: var(--anthrazit); color: #fff; }
+.tabelle tr:last-child td { border-bottom: none; }
+.tabelle td:first-child { font-weight: 600; }
+.hinweis {
+  background: #fdf3e0;
+  border-left: 4px solid var(--sonne);
+  padding: 0.8rem 1rem;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.95rem;
+  margin: 1rem 0;
+}
+.hinweis.rot { background: #fbeae6; border-left-color: var(--rot); }
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  vertical-align: middle;
+}
+.badge.gruen { background: #e2f2e8; color: var(--gruen); }
+.badge.grau { background: #ecebe7; color: var(--grau); }
+
+/* Formulare */
+form label { display: block; font-weight: 600; margin: 0.9rem 0 0.2rem; }
+form select, form input, form textarea {
+  width: 100%;
+  max-width: 30rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #cfcdb8;
+  border-radius: 6px;
+  font: inherit;
+  background: #fff;
+}
+button.button { cursor: pointer; font: inherit; margin-top: 1rem; }
+#ergebnis { margin-top: 1.2rem; }
+
+/* Fuß */
+.fuss {
+  background: var(--schwarz);
+  color: #b9bdc3;
+  padding: 1.6rem 1.2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.fuss a { color: #dfe2e6; margin: 0 0.6rem; }
+.fuss .motto-zeile { color: var(--sonne); font-weight: 600; margin-bottom: 0.5rem; }
+
+@media (max-width: 40rem) {
+  nav { width: 100%; }
+  nav a:first-child { margin-left: 0; }
+}

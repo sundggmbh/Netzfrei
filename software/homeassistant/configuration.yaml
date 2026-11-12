@@ -1,0 +1,13 @@
+# Home Assistant – Grundkonfiguration (minimal)
+# Netzfrei Ebene 1: Sensoren/Aktoren. Regellogik liegt in software/netzfrei/ems.py;
+# dieses Setup spiegelt die Schwellen als Helfer (siehe packages/netzfrei.yaml).
+
+default_config:
+
+homeassistant:
+  packages: !include_dir_named packages
+
+logger:
+  default: warning
+  logs:
+    homeassistant.components.automation.netzfrei: info

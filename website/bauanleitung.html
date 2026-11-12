@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bauanleitung v1 – SunWall SW-2.0 selbst bauen</title>
+<meta name="description" content="SunWall SW-2.0 Bauanleitung: Stückliste mit Bezugsquellen, 10 Schritte, Inbetriebnahme, Mess-Option und Fehlerbehebung. Open Hardware – zum Nachbauen und Nachrechnen.">
+<link rel="stylesheet" href="style.css">
+<style>
+@page { size: A4; margin: 14mm; }
+.anleitung { max-width: 64rem; margin: 0 auto; padding: 0 1.2rem 3rem; }
+.anleitung h2 { margin-top: 2.2rem; border-bottom: 2px solid var(--sonne); padding-bottom: 0.2rem; }
+.anleitung h3 { margin-top: 1.4rem; }
+.schritt { background: var(--karte); border: 1px solid #e4e2dc; border-radius: 10px; padding: 1rem 1.2rem; margin: 0.8rem 0; }
+.schritt .nr { display: inline-block; background: var(--schwarz); color: var(--sonne); font-weight: 800; border-radius: 6px; padding: 0.1rem 0.6rem; margin-right: 0.5rem; }
+.foto { border: 2px dashed #c9c5bc; border-radius: 8px; color: var(--grau); text-align: center; padding: 1.6rem 1rem; font-size: 0.9rem; margin: 0.6rem 0; background: #fbfaf7; }
+.formel { background: #f2f0ea; border-radius: 8px; padding: 0.8rem 1rem; font-family: ui-monospace, Consolas, monospace; font-size: 0.95rem; margin: 0.6rem 0; overflow-x: auto; }
+@media print {
+  .kopf, .fuss, .druck-hinweis { display: none !important; }
+  body { background: #fff; }
+  .anleitung { padding: 0; max-width: 100%; }
+  .schritt, .karte { border: 1px solid #bbb; page-break-inside: avoid; }
+  .foto { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<header class="kopf">
+  <a class="marke" href="index.html">Sun<span>Wall</span></a>
+  <nav>
+    <a href="produkte.html">Produkte</a>
+    <a href="bauanleitung.html">Bauanleitung</a>
+    <a href="foerdercheck.html">Förder-Check</a>
+    <a href="faq.html">FAQ</a>
+    <a href="impressum.html">Impressum</a>
+  </nav>
+</header>
+
+<p class="druck-hinweis" style="text-align:center;margin:1rem 0 0">
+  Drucktipp: Strg/Cmd + P → „Speichern als PDF" ergibt die A4-Anleitung (Navigation wird ausgeblendet).
+</p>
+
+<div class="anleitung">
+  <h1>SunWall SW-2.0 – Bauanleitung v1</h1>
+  <p style="color:var(--grau)">
+    Version 1 · Stand: heute · Lizenz: Open Hardware (Dokumentation offen, siehe GitHub).
+    Diese Anleitung ist der Lead-Magnet und QC-Maßstab für den Bausatz: Wer kaufen will,
+    weiß genau, was drin ist – wer bauen will, kann es genau so.
+  </p>
+
+  <div class="hinweis">
+    <strong>Was du baust:</strong> Ein transpirierter Sonnen-Luftkollektor, 2 m² Absorberfläche,
+    1.000 × 2.000 × 130 mm, ca. 18–25 kg. Zielwerte: ΔT bis 40 K, 400–800 W (SW-G),
+    Jahresertrag 400–700 kWh (Mitteleuropa, Süd). Materialkosten: 165–275 € (SW-U).
+  </div>
+
+  <h2>1. Ehrliche Grenzen vor dem Loslegen</h2>
+  <ul>
+    <li>Nachts und bei starker Bewölkung liefert die Wand nichts.</li>
+    <li>Wind ist der größte Ertragskiller bei offenen Kollektoren (SW-U) – geschützte Süd-Lage wählen oder SW-G (Glas) bauen.</li>
+    <li>Ost/West bringt deutlich weniger als Süd, Nord nichts.</li>
+    <li>Dichtheit entscheidet über Erfolg oder Flop – Schritt 3 ist der wichtigste des ganzen Baus.</li>
+    <li>Dachmontage = Fachbetrieb. Diese Anleitung behandelt nur die Wandmontage vom Bodengerüst oder mit Mietgerüst.</li>
+  </ul>
+
+  <h2>2. Stückliste mit Bezugsquellen (SW-U, 2 m²)</h2>
+  <table class="tabelle">
+    <tr><th>Pos</th><th>Teil</th><th>Spec</th><th>Bezug</th><th>Preis</th></tr>
+    <tr><td>1</td><td>Lochblech (Absorber)</td><td>Stahl 1,0–1,5 mm, Ø 1 mm / 15 mm Raster, mattschwarz beschichtet, 1.000 × 2.000 mm</td><td>Blechzentrum online (Zuschnitt-Service)</td><td>60–90 €</td></tr>
+    <tr><td>2</td><td>Rahmen</td><td>Alu-Winkelprofil 40 × 20 × 2 mm oder Konstruktionsholz 40 × 60 mm, wetterfest</td><td>Baumarkt/Metallhandel</td><td>20–35 €</td></tr>
+    <tr><td>3</td><td>Rückwand</td><td>Alu-Verbundplatte oder witterungsfeste OSB 12 mm, 1.000 × 2.000 mm</td><td>Baumarkt</td><td>15–25 €</td></tr>
+    <tr><td>4</td><td>Dämmung Plenum</td><td>PUR/PIR 30 mm (oder Mineralwolle 40 mm), 1.000 × 2.000 mm</td><td>Baumarkt</td><td>10–20 €</td></tr>
+    <tr><td>5</td><td>EC-Ventilator</td><td>Radial, 12 V, 100–160 m³/h, PWM, ~10–25 W, IP44+</td><td>Fachhandel/Import (CE-Nachweis!)</td><td>25–45 €</td></tr>
+    <tr><td>6</td><td>Regelung</td><td>PWM-Controller 12 V + Temperatursensor (NTC 10 kΩ ×2; optional DS18B20 + Mikrocontroller)</td><td>Elektronikversand</td><td>10–20 €</td></tr>
+    <tr><td>7</td><td>Luftanschluss</td><td>Stutzen/Kanal Ø 100–125 mm inkl. Rückschlagklappe (Rückstrom nachts!)</td><td>Baumarkt (Lüftung)</td><td>8–15 €</td></tr>
+    <tr><td>8</td><td>Dichtung/Befestigung</td><td>Hitzebeständiges Silikon, EPDM-Dichtband, Blechschrauben, Konsolen</td><td>Baumarkt</td><td>15–25 €</td></tr>
+    <tr><td>9</td><td>Optional SW-G</td><td>Floatglas 4 mm, 1.000 × 2.000 mm + Abstandhalter (30 mm) + Regensicherung</td><td>Glashandel (Zuschnitt)</td><td>+40–70 €</td></tr>
+    <tr><td>10</td><td>Optional SW-Solar</td><td>PV-Panel 10–20 W + Lade-/PWM-Modul (Ventilator läuft mit der Sonne – selbstregelnd)</td><td>Elektronikversand</td><td>+20–40 €</td></tr>
+  </table>
+  <p style="color:var(--grau);font-size:0.9rem">
+    Summe SW-U: ca. 165–275 €. Zum Vergleich: der geprüfte <a href="produkte.html">SunWall-Bausatz</a>
+    kostet 249–349 € – dafür mit QC (Dichtheits- und Lüfterlauf-Prüfung), Messprotokoll,
+    Garantie und passgenauem Zuschnitt.
+  </p>
+
+  <h2>3. Werkzeug</h2>
+  <p>
+    Bohrschrauber + 3,2-mm-Bohrer (Löcher nachbohren, falls Raster fehlt) · Blechschere
+    oder Stichsäge mit Metallblatt · Silikonpistole · Wasserwaage + Schnur · Zollstock ·
+    Akkubohrer mit Nuss für Blechschrauben · <strong>Handschuhe (Blechkanten!)</strong> ·
+    Schutzbrille · Leiter/Bodengerüst. Optional: Rauchstäbchen oder Räucherstäbchen für
+    den Dichtheits-Test, Multimeter.
+  </p>
+
+  <h2>4. Die 10 Schritte</h2>
+
+  <div class="schritt"><span class="nr">1</span><strong>Standort prüfen.</strong>
+    Süd-Fassade, möglichst windgeschützt (Nische, Dachüberstand), keine Verschattung
+    durch Bäume/Nachbarhaus im Winter (Sonnenstand niedrig!). Wand muss 25–30 kg
+    je Modul tragen (Dübelwahl nach Wandtyp). Luftweg ins Zimmer planen: Stutzen-
+    Position unten (Eintritt kalt) → Austritt oben (warm) oder umgekehrt je nach
+    Raum – Hauptsache: Warmluft strömt oben aus.
+    <div class="foto">[FOTO 1: Idealstandort-Süd, Wintermittag – Sonnenstand markieren]</div>
+  </div>
+
+  <div class="schritt"><span class="nr">2</span><strong>Rahmen + Rückwand bauen.</strong>
+    Rahmen auf 1.000 × 2.000 mm (außen) aufbauen, Rückwand von hinten aufschrauben
+    und rundum verkleben. Dämmung (Pos 4) auf die Rückwand kleben – das ist die
+    Plenum-Rückseite. Alles eckig? Diagonalen messen.
+    <div class="foto">[FOTO 2: Rahmen + Rückwand + Dämmung von hinten]</div>
+  </div>
+
+  <div class="schritt"><span class="nr">3</span><strong>Plenum abdichten – der wichtigste Schritt.</strong>
+    Alle Innenfugen (Rahmen-Ecken, Dämmstöße, Kabeldurchführungen) mit hitzebeständigem
+    Silikon dicht ziehen. Später testen (Schritt 9). Eine Undichtigkeit kostet bis zu
+    die Hälfte des Ertrags – lieber zweimal nacharbeiten.
+    <div class="foto">[FOTO 3: Silikon-Naht rundum, Detail Eckverbindung]</div>
+  </div>
+
+  <div class="schritt"><span class="nr">4</span><strong>Lochblech einlegen.</strong>
+    Absorber von vorn einlegen, auf den Dämmkern legen (das ist das Plenum-Dach),
+    mit Winkelklammern am Rahmen fixieren – <strong>nicht</strong> starr verschrauben
+    (Wärmeausdehnung ±5 mm bei 80 K Temperaturdifferenz einplanen). Unbeschichtetes
+    Blech: vorher mattschwarz, hitzebeständig (≥ 150 °C) streichen – Glanz kostet
+    Ertrag (Absorption ≥ 0,95).
+    <div class="foto">[FOTO 4: Lochblech-Detail, Raster sichtbar, Kanten-Klammer]</div>
+  </div>
+
+  <div class="schritt"><span class="nr">5</span><strong>Luftanschluss setzen.</strong>
+    Stutzen (Ø 100–125 mm) in den Rahmenfräs-/Bohrausschnitt unten einsetzen,
+    mit Dichtband + Silikon abdichten. <strong>Rückschlagklappe einbauen</strong> –
+    sonst kühlt die Wand nachts dein Haus aus (Rückstrom!).
+    <div class="foto">[FOTO 5: Stutzen + Rückschlagklappe von innen]</div>
+  </div>
+
+  <div class="schritt"><span class="nr">6</span><strong>Ventilator montieren.</strong>
+    EC-Ventilator hinter den Stutzen, vibrationsentkoppelt (Gummi-Puffer). Kabel
+    nach innen/außen führen (Dichtmanschette!), PWM-Regler an schattiger, trockener
+    Stelle am Rahmen. 12/24 V DC only – <strong>keine 230 V im Modul</strong>.
+    <div class="foto">[FOTO 6: Ventilator + Entkopplung + Verkabelung]</div>
+  </div>
+
+  <div class="schritt"><span class="nr">7</span><strong>Sensoren setzen (optional, empfohlen).</strong>
+    NTC/DS18B20 vor dem Absorber (Außenluft) und am Stutzen-Austritt (Warmluft).
+    Damit misst du dein ΔT live – und der Bausatz-Kunde bekommt später genau dieses
+    Messprotokoll mit.
+    <div class="foto">[FOTO 7: Sensor-Positionen skizziert]</div>
+  </div>
+
+  <div class="schritt"><span class="nr">8</span><strong>Wetterschutz.</strong>
+    SW-G: Glas mit 30 mm Abstand vor das Blech (Abstandhalter, rundum dicht,
+    Regensims unten). SW-U: profilierte/gewellte Ausführung wählen oder oberste
+    Blechreihe als Regenhaube abknicken – Stehsaum nach unten. Unten 1–2 kleine
+    Kondensat-Öffnungen (2–3 mm) mit Gefälle nach außen.
+    <div class="foto">[FOTO 8: SW-G Abstandhalter / SW-U Regenhaube]</div>
+  </div>
+
+  <div class="schritt"><span class="nr">9</span><strong>Dichtheits-Test (QC).</strong>
+    Ventilator laufen lassen, mit Räucherstäbchen alle Fugen abfahren: Kein Rauch
+    darf ins Plenum gesaugt werden (von außen) oder entweichen (von innen).
+    Zusätzlich: Ventilator aus, Warmluftquelle (Föhn) an den Stutzen – kein Luftverlust
+    an den Fugen. Nacharbeiten, bis dicht.
+    <div class="foto">[FOTO 9: Rauch-Test an der Eckfuge]</div>
+  </div>
+
+  <div class="schritt"><span class="nr">10</span><strong>Montage + Inbetriebnahme.</strong>
+    Konsolen an der Wand (Abstand zur Fassade 30–50 mm für Konvektionsverlust-Armut
+    und Regenablauf), Modul einhängen, waagerecht/leicht geneigt (Kondensat läuft
+    raus). Volumenstrom einstellen: 30–80 m³/h je m² → für 2 m²: 60–160 m³/h.
+    Kleiner Strom = heißere Luft, großer Strom = mehr Gesamtwärme. Erst im Betrieb
+    optimieren (siehe Kap. 5).
+    <div class="foto">[FOTO 10: Modul an der Wand, Inbetriebnahme mit Messdisplay]</div>
+  </div>
+
+  <h2>5. Inbetriebnahme, Messung und Formel</h2>
+  <p>
+    Wärmeleistung aus Volumenstrom und Temperaturdifferenz:
+  </p>
+  <div class="formel">
+    P [W] ≈ 0,335 × V̇ [m³/h] × ΔT [K]<br>
+    (ρ = 1,2 kg/m³, c_p = 1,005 kJ/(kg·K))<br><br>
+    Beispiel: 100 m³/h × ΔT 20 K → P ≈ 670 W<br>
+    Beispiel: 60 m³/h × ΔT 32 K → P ≈ 645 W
+  </div>
+  <p>
+    Beide Beispiele liefern ähnliche Leistung – <strong>der Ventilator bestimmt, ob
+    dein Modul „heiße Luft für einen Raum" oder „viel Wärme fürs System" liefert</strong>.
+    Für Raumheizung: kleiner Strom, großes ΔT. Für KWL-Vorwärmung/Wand-Systeme:
+    großer Strom. Tagesverlauf loggen (Mess-Kit oder DS18B20 + Mikrocontroller) und
+    mit der Einstrahlung vergleichen – so entsteht dein persönliches
+    Ertragsprotokoll.
+  </p>
+
+  <h2>6. Fehlerbehebung</h2>
+  <table class="tabelle">
+    <tr><th>Symptom</th><th>Häufigste Ursache</th><th>Prüfung / Lösung</th></tr>
+    <tr><td>ΔT deutlich unter 10 K bei Sonne</td><td>Undichtigkeit im Plenum</td><td>Rauch-Test (Schritt 9), Fugen nachziehen</td></tr>
+    <tr><td>ΔT ok, aber wenig Wärme gesamt</td><td>Volumenstrom zu klein / Ventilator zu schwach</td><td>V̇ messen (Anemometer), Drehzahl hoch, Ziel 60–160 m³/h</td></tr>
+    <tr><td>ΔT fällt bei Wind zusammen</td><td>Wind-Verluste (SW-U)</td><td>Windgeschütztere Lage, profiliertes Blech oder SW-G (Glas)</td></tr>
+    <tr><td>Ventilator läuft nicht</td><td>PWM-Verkabelung / Polarität / Netzteil</td><td>Multimeter: 12 V am Ventilator? PWM-Signal? Drehstecker prüfen</td></tr>
+    <tr><td>Ventilator pfeift/vibriert</td><td>Starre Montage / Unwucht</td><td>Gummi-Entkopplung, Laufrad auf Verschmutzung prüfen</td></tr>
+    <tr><td>Wasser im Plenum</td><td>Kondensat ohne Abfluss / Regeneintrag</td><td>Kondensat-Öffnungen freimachen, Gefälle prüfen, Regensims/Glasdichtung kontrollieren</td></tr>
+    <tr><td>Nachts kühlt die Wand das Haus</td><td>Kein Rückschlag / Rückstrom</td><td>Rückschlagklappe (Schritt 5) nachrüsten; Nacht-Abschaltung per Regelung</td></tr>
+    <tr><td>Sommer zu heiß im Raum</td><td>Kein Sommerbetrieb konfiguriert</td><td>Nacht-Kühlbetrieb aktivieren (Umluft/umgekehrter Betrieb), Mittag drosseln</td></tr>
+  </table>
+
+  <h2>7. Sicherheit</h2>
+  <ul>
+    <li>Blechkanten = Schnittgefahr: Handschuhe, Kanten entgraten.</li>
+    <li>Nur 12/24 V DC im Modul; Netzteil nach IP-Klasse außen geeignet, FI-gesichert.</li>
+    <li>Glas: zu zweit tragen, Sicherheitsfolie erwägen.</li>
+    <li>Dacharbeiten gehören in Fachhände – Wandmontage vom Gerüst ist der DIY-Weg.</li>
+    <li>Hitzebeständige Materialien im Plenum (kein normales Polystyrol direkt am Absorber!).</li>
+  </ul>
+
+  <h2>8. Selbstbau oder Bausatz?</h2>
+  <p>
+    Selbstbau ist möglich und hier vollständig dokumentiert – das ist unser
+    Open-Hardware-Versprechen. Der <a href="produkte.html">geprüfte Bausatz</a>
+    (249–449 €) bringt dafür: passgenauen Zuschnitt, dichtheits- und laufgeprüftes
+    Modul, QC-Messprotokoll, 2 Jahre Gewährleistung und Ersatzteil-Garantie für den
+    Ventilator. Wer Zeit sparen und Sicherheit kaufen will, bestellt; wer bauen will,
+    hat jetzt alles. Beides macht uns unabhängig – einfach, kostengünstig, unabhängig.
+  </p>
+
+  <div class="hinweis">
+    Fragen, Messwerte, Verbesserungen? Wir sammeln Rückmeldungen aus jedem Selbstbau:
+    <a href="index.html#warteliste">Warteliste/Kontakt</a> · Auslegungsrechner und
+    Projektdokumentation offen auf GitHub.
+  </div>
+</div>
+
+<footer class="fuss">
+  <div class="motto-zeile">Einfach, kostengünstig, unabhängig – für jeden bezahlbar.</div>
+  <a href="index.html">Start</a>
+  <a href="produkte.html">Produkte</a>
+  <a href="foerdercheck.html">Förder-Check</a>
+  <a href="faq.html">FAQ</a>
+  <a href="impressum.html">Impressum</a>
+</footer>
+</body>
+</html>

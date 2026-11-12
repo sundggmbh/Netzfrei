@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Förder-Check – SunWall</title>
+<meta name="description" content="Erst-Einschätzung: Welche staatliche Förderung passt zu deinem Vorhaben? Heizungsförderung (BEG), Steuerbonus, Landesprogramme – ehrlich, ohne Gewähr.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="kopf">
+  <a class="marke" href="index.html">Sun<span>Wall</span></a>
+  <nav>
+    <a href="produkte.html">Produkte</a>
+    <a href="bauanleitung.html">Bauanleitung</a>
+    <a href="foerdercheck.html">Förder-Check</a>
+    <a href="faq.html">FAQ</a>
+    <a href="impressum.html">Impressum</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Förder-Check</h1>
+  <p>
+    Fünf Fragen – wir schätzen ein, welche staatliche Förderung zu deinem Vorhaben
+    passt. Die Einschätzung läuft <strong>komplett in deinem Browser</strong> (keine
+    Daten gehen irgendwohin) und ist <strong>ohne Gewähr</strong>: Förderprogramme
+    ändern sich mehrfach pro Jahr.
+  </p>
+
+  <form id="check">
+    <label for="eigentum">1. Bist du Eigentümer der Immobilie?</label>
+    <select id="eigentum">
+      <option value="ja">Ja, selbstgenutzt</option>
+      <option value="vermietet">Ja, vermietet</option>
+      <option value="nein">Nein, Mieter</option>
+    </select>
+
+    <label for="heizung">2. Welche Heizung ist heute drin?</label>
+    <select id="heizung">
+      <option value="fossil_alt">Öl / Kohle / Nachtspeicher / Gas ≥ 20 Jahre</option>
+      <option value="fossil_jung">Gas, jünger als 20 Jahre</option>
+      <option value="keine">Keine / elektrische Direktheizung</option>
+    </select>
+
+    <label for="einkommen">3. Zu versteuerndes Jahreseinkommen (Haushalt, ca.)?</label>
+    <select id="einkommen">
+      <option value="niedrig">bis 30.000 €</option>
+      <option value="mittel">30.000–40.000 €</option>
+      <option value="hoch">über 40.000 €</option>
+    </select>
+
+    <label for="vorhaben">4. Was planst du?</label>
+    <select id="vorhaben">
+      <option value="sunwall">SunWall Bausatz (Selbstmontage)</option>
+      <option value="sunwall_pro">SunWall mit Fachbetrieb montiert</option>
+      <option value="klima">Klimagerät mit Heizfunktion (Luft-Luft-Wärmepumpe)</option>
+      <option value="kwl">Lüftungsanlage mit Wärmerückgewinnung</option>
+      <option value="komplett">Komplettsanierung (Heizung + Hülle)</option>
+    </select>
+
+    <label for="land">5. Bundesland / Land (für Landesprogramme)</label>
+    <input id="land" placeholder="z. B. Bayern – oder: Österreich, Schweiz, Türkei">
+
+    <button class="button" type="submit">Einschätzung zeigen</button>
+  </form>
+
+  <div id="ergebnis"></div>
+
+  <section>
+    <h2>Die Konditionen im Überblick (Stand 2025/2026, ohne Gewähr)</h2>
+    <table class="tabelle">
+      <tr><th>Baustein (KfW 458, Heizungstausch)</th><th>Satz</th></tr>
+      <tr><td>Grundförderung</td><td>30 %</td></tr>
+      <tr><td>Klimageschwindigkeitsbonus (Austausch vor Ende 2028)</td><td>+16 % (sinkt ab Feb 2027 halbjährlich um 4 %, ab Aug 2028 entfallen)</td></tr>
+      <tr><td>Einkommensbonus (zvE ≤ 40.000 €)</td><td>+30 %</td></tr>
+      <tr><td>Deckel gesamt</td><td>70 % (bei zvE ≤ 30.000 €: bis 80 %)</td></tr>
+      <tr><td>Förderfähige Kosten, 1. Wohneinheit</td><td>28.000 € (ab Feb 2027 halbjährlich −750 €)</td></tr>
+    </table>
+    <div class="hinweis rot">
+      <strong>Wichtig – die drei Fallen:</strong> (1) Antrag muss <em>vor</em> dem
+      Vorhabenbeginn (Abschluss Liefer-/Leistungsvertrag!) gestellt werden.
+      (2) Eigenleistung wird mit 0 € gefördert – Fachbetrieb nötig.
+      (3) Steuerbonus (20 % Handwerkerkosten, § 35c EStG) und BEG-Zuschuss
+      schließen sich für dieselbe Maßnahme aus.
+    </div>
+    <div class="hinweis">
+      <strong>SunWall selbst ist nicht BEG-förderfähig</strong> (Solar-Luft steht nicht
+      auf der Maßnahmen-Liste – trotz exzellenter CO₂-Bilanz wird listenbasiert
+      gefördert). Realistische Wege: Steuerbonus bei Fachbetriebs-Montage (Einzelfall),
+      Einbindung in eine Komplettsanierung (Energie-Effizienz-Experte entscheidet) oder
+      kommunale Klimaschutz-/Pilotprogramme. Details:
+      <a href="faq.html#foerderung">FAQ Förderung</a>.
+    </div>
+  </section>
+</main>
+
+<footer class="fuss">
+  <div class="motto-zeile">Einfach, kostengünstig, unabhängig – für jeden bezahlbar.</div>
+  <a href="index.html">Start</a>
+  <a href="produkte.html">Produkte</a>
+  <a href="faq.html">FAQ</a>
+  <a href="impressum.html">Impressum</a>
+  <a href="datenschutz.html">Datenschutz</a>
+</footer>
+
+<script>
+(function () {
+  var form = document.getElementById("check");
+  var out = document.getElementById("ergebnis");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var eigentum = document.getElementById("eigentum").value;
+    var heizung = document.getElementById("heizung").value;
+    var einkommen = document.getElementById("einkommen").value;
+    var vorhaben = document.getElementById("vorhaben").value;
+    var land = document.getElementById("land").value.trim();
+
+    var zeilen = [];
+    function add(titel, text, klasse) {
+      zeilen.push('<div class="hinweis ' + (klasse || "") + '"><strong>' + titel +
+        "</strong><br>" + text + "</div>");
+    }
+
+    if (eigentum === "nein") {
+      add("Mieter:in", "Die BEG-Heizungsförderung gibt es nur für Eigentümer. Sprich mit deinem Vermieter – oder starte mit SunWall als Mietwohnungs-tauglichem Fenster-/Balkon-Modul (ohne Förderung, dafür ab 149 €).", "rot");
+    }
+
+    if (vorhaben === "sunwall" || vorhaben === "sunwall_pro") {
+      if (vorhaben === "sunwall_pro") {
+        add("SunWall + Fachbetrieb", "Möglicher Weg: Steuerbonus (§ 35c EStG, 20 % der Handwerkerkosten, bis 40.000 € über 3 Jahre) – Einzelfall, bitte mit Steuerberatung prüfen. Alternativ Einbindung in eine Komplettsanierung: dort kann ein Energie-Effizienz-Experte die SunWall-Wand in die Bilanz einbeziehen.");
+      } else {
+        add("SunWall Bausatz (Selbstmontage)", "Selbstmontage ist von staatlicher Förderung ausgeschlossen (Eigenleistung = 0 € förderfähig). SunWall braucht aber keine Förderung, um konkurrenzlos günstig zu sein: ab 149 €, Erntefaktor 20–100.");
+      }
+      add("Pilotförderung", "Für Demonstrationsanlagen (Kommunen, Wohnungsbaugesellschaften, Schulen, Landwirtschaft) gibt es Klimaschutz-Programme außerhalb der BEG. Melde dich, wenn du so ein Projekt planst.");
+    }
+
+    if (vorhaben === "klima" || vorhaben === "kwl" || vorhaben === "komplett") {
+      if (eigentum === "ja" || eigentum === "vermietet") {
+        var quote = "30 %";
+        if (einkommen === "niedrig") { quote = "bis 80 %"; }
+        else if (einkommen === "mittel") { quote = "bis 60 %"; }
+        var bonus = heizung === "fossil_alt" ? " plus Klimageschwindigkeitsbonus +16 % (Austausch vor Ende 2028)" : "";
+        add("BEG-Heizungsförderung (KfW 458)", "Grobe Einschätzung: " + quote + bonus + ". Voraussetzungen: Antrag VOR Vertragsabschluss, Fachbetrieb, förderfähige Geräte (z. B. A++ im Heizbetrieb, Wärmeerzeuger-Liste, Smart-Grid-Schnittstelle). Wähle Geräte mit natürlichem Kältemittel (R290) – R32 ist ab 2028 nicht mehr förderfähig.");
+      }
+      if (vorhaben === "kwl") {
+        add("Lüftung mit Wärmerückgewinnung", "Förderfähig als BEG-Einzelmaßnahme (BAFA, ~15 %) unter technischen Mindestanforderungen; alternativ Steuerbonus. Mindestinvest beachten.");
+      }
+      if (vorhaben === "komplett") {
+        add("Komplettsanierung (BEG WG)", "Bis ~45 % Tilgungszuschuss zum Effizienzhaus-Standard. Achtung: BEG-WG- und BEG-EM-Maßnahmen lassen sich seit der Reform 2026 nicht mehr kombinieren – Reihenfolge mit Energie-Effizienz-Experten planen.");
+      }
+    }
+
+    if (land && !/deutschland|bayern|baden|berlin|hamburg|nordrhein|nrw|sachsen|thüringen|hessen|brandenburg|schleswig|mecklenburg|saarland|bremen|niedersachsen|rheinland|westfalen|anhalt|württemberg|pfalz|franken|schwaben|holstein|vorpommern|westf/i.test(land)) {
+      add("Außerhalb Deutschlands", "Die BEG ist ein deutsches Programm. In Österreich/Schweiz gibt es eigene Programme; in sonnenreichen Ländern (z. B. Türkei) ist der Fall anders: dort ist SunWall ohne Förderung wegen der hohen Einstrahlung (1.500–1.700 kWh/m²·a) besonders wirtschaftlich.");
+    }
+
+    zeilen.push('<div class="hinweis rot"><strong>Ohne Gewähr.</strong> Dies ist eine Erst-Einschätzung, keine Rechts- oder Steuerberatung. Maßgeblich sind ausschließlich die aktuellen Förderrichtlinien (KfW, BAFA) im Zeitpunkt der Antragstellung.</div>');
+    out.innerHTML = "<h2>Deine Einschätzung</h2>" + (zeilen.join("") || '<div class="hinweis">Bitte Angaben prüfen.</div>');
+    out.scrollIntoView({ behavior: "smooth" });
+  });
+})();
+</script>
+</body>
+</html>

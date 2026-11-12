@@ -46,7 +46,8 @@ autarq/
 │   ├── 09-kaeltemittel-niedertemperaturhub.md ← R290 & 1–3 K-Hub-Betrieb (COP 8–15)
 │   ├── 10-smart-home-systeme.md ← Systemvergleich & Einkaufsliste für Netzfrei
 │   └── 11-klimageraete-umbau.md ← Klimageräte als günstige WP: 5 Umbau-Pfade, Pakete
-│   └── 12-sonnenluftkollektor.md ← Wärme aus schwarzem Lochblech (30–100 €/m²)
+│   ├── 12-sonnenluftkollektor.md ← Wärme aus schwarzem Lochblech (30–100 €/m²)
+│   └── 13-produkt-sunwall.md  ← **SunWall**: Kollektor als Produkt/Marke (Markt, Spez, Roadmap)
 └── tools/
     └── auslegung.py           ← Auslegungsrechner (Bedarf → Komponenten → Kosten)
 ```

@@ -64,6 +64,8 @@ je nach Region in 8–15 Jahren – in sonnenreichen Regionen schneller.
 - [ ] Messdatenerfassung & Veröffentlichung der Ergebnisse
 
 ### Phase 5 – Verbreitung
+- [ ] **SunWall-Produktlinie** (Sonnen-Luftkollektor als eigene Marke, siehe
+      `13-produkt-sunwall.md`): Prototyp → Kleinserie → Onlineshop
 - [ ] Open-Hardware-Dokumentation (Bauanleitungen, Stücklisten)
 - [ ] Partner für Serienfertigung der kompakten WP
 - [ ] Anleitung für Selbstbauer in allen Klimazonen
